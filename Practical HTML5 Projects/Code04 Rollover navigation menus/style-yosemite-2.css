@@ -1,0 +1,102 @@
+/*Design by Free CSS Templates http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License*/
+/* Set styles to equalise browser rendition*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body { margin: 0; padding: 0; background: url(images/img01.gif) repeat-x left top;
+	font-family: Arial; font-size: 100%; color: black;
+}
+h1, h2, h3 { margin: 0; padding: 0; font-weight: normal;
+}
+h1 { font-size: 2em; color:white;
+}
+h2 { font-size: 2.4em;
+}
+h3 { font-size: 1.6em;
+}
+p, ul, ol { margin-top: 0; line-height: 180%;
+}
+ul, ol {
+}
+a { text-decoration: none; 	color: white;
+}
+a:hover { color:red;
+}
+#wrapper { width: 980px; margin: 0 auto; padding: 0;
+}
+/* Header */
+header { width: 980px; height: 280px; margin: 0 auto;
+	padding: 0px; background: url(images/img06.gif) no-repeat left top;
+}
+/* Logo */
+#logo { float: right; margin: 0; padding: 0; color: #000000;
+}
+#logo h1, #logo p { margin: 0; padding: 0;
+}
+#logo h1 { float: left; padding-top: 210px; letter-spacing: -1px; text-align: right;
+	text-transform: lowercase; font-size: 3.8em;
+}
+#logo p { float: left; margin: 0; padding: 250px 0 0 10px;
+	font: normal 14px Georgia, "Times New Roman", Times, serif;
+	font-style: italic; color: #FFFFFF;
+} 
+#logo a { border: none; background: none; text-decoration: none; color: #FFFFFF;
+}
+/* Search */
+/* Menu */
+/*#menu { width: 980px; height: 90px; margin: 0 auto; padding: 0;
+}
+#menu ul { margin: 0; padding: 50px 0px 0px 0px; list-style: none; line-height: normal;
+}
+#menu li { float: left;
+}
+#menu a { display: block; width: 130px; height: 30px; margin-right: 1px;
+	padding: 9px 0px 0px 0px; background: url(images/img02.gif) no-repeat left top;
+	text-decoration: none; text-align: center; font-family: Arial; font-size: 100%;
+	font-weight: bold; color: #FFFFFF; border: none;
+}
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none; color:red;
+}
+#menu .current_page_item a {
+	padding-left: 0;
+}*/
+/* Menu */
+nav { width: 980px; height: 90px; margin: 0 auto; padding: 0;
+}
+nav ul { margin: 0; padding: 50px 0px 0px 0px; list-style: none; line-height: normal;
+}
+nav li { float: left;
+}
+nav a { display: block; width: 130px; height: 30px; margin-right: 1px;
+	padding: 9px 0px 0px 0px; background: url(images/img02.gif) no-repeat left top;
+	text-decoration: none; text-align: center; font-family: Arial; font-size: 100%;
+	font-weight: bold; color: #FFFFFF; border: none;
+}
+nav a:hover, #menu .current_page_item a {
+	text-decoration: none; color:red;
+}
+nav .current_page_item a {
+	padding-left: 0;
+}
+
+
+/* Page */
+#page { width: 940px; margin: 0 auto; padding: 0px 0px 0px 40px;
+	background: url(images/img03.gif) repeat-y left top;
+}
+#page-bgtop { padding: 20px 0px;
+}
+/* Content */
+#content { float: left; width: 580px; padding: 30px 0px 0px 0px;
+}
+/* Footer */
+footer { height: 30px; margin: 0 auto; padding: 0px 0 15px 0; background: white; 
+			border-top: 1px solid #DEDEDE; font-family: Arial;
+}
+footer p { margin: 0; padding-top: 20px; font-size: small; text-align: center; color: black;
+}
+footer a { color: #8A8A8A;
+}

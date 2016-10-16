@@ -1,0 +1,23 @@
+﻿/*SET 4 SIDED SHADOW*/
+/*body {
+	background-color:aqua;
+}*/
+.shadow-one {position:absolute; padding-top:60px; padding-left:60px; }
+
+.corner-a {position:absolute; right:0; top:0; width:60px; height:60px; background:url('images/shadow30px.png') right top no-repeat; }
+
+.corner-b {position:absolute; left:0; bottom:0; width:60px; height:60px; background:url('images/shadow30px.png') left bottom no-repeat;}
+
+.shadow-two { position:relative; background :url('images/shadow30px.png') right bottom no-repeat;}
+	
+.shadow-three { position:relative; left:-60px; top:-60px;  background:url('images/shadow30px.png') left top no-repeat; }
+
+.shadow-four {	position:relative; left:30px; top:30px; }	
+
+/*.corner-a,
+.corner-b,
+.shadow-two,
+.shadow-three {
+	background: url(shadow30px.png) no-repeat;
+  }*/  /* This rule calls the BG image for all divs that need it, so only one path needs to change
+  when switching to a different shadow image.*/ 		

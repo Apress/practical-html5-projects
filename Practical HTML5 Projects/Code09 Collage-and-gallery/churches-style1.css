@@ -1,0 +1,10 @@
+﻿/*position body and table at horizontal centre of screen*/
+body {width:960px; font-family:"times new roman"; font-size:medium; color:navy; margin:auto; min-width:780px;}
+img { border:0; margin:0; padding:0; 
+}
+#container { text-align:center; margin:10px auto 0 auto;
+}
+#collage { margin:0 auto 0 auto; text-align:center;
+}
+/*#collage img { 	margin-top: -3px; margin-bottom:-2px; margin-left:-2px; margin-right:-2px; 
+}*/

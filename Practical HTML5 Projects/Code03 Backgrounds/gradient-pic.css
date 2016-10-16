@@ -1,0 +1,11 @@
+body, header, #content, { margin:0; padding:0; border:0; 
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+/*change #header to header and remove div*/
+body { margin:auto; background:url(images/green-grad.jpg) repeat-x; 
+}
+header {width:920px; height:180px; padding:0; border:10px white solid; 
+  background: url(images/header3.jpg); margin:10px auto; 
+}

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Generate some content before a selected paragraph</title>
+  <style type="text/css">
+   p  { font-size: 100%; }
+   .note:before { content:"Note: "; background-color:red; color:white;}
+  
+  </style>
+  </head>
+ <body>
+ <p>surrounding paragraph</p>
+ 
+  <p class="note">The text with the coloured background<br />
+  is generated with CSS2 but is not supported by IE6 nd IE7.<br />
+  The class "note" is targeted by the <br />
+  pseudo-element <strong>:before</strong>.</p>
+  <p>surrounding paragraph</p>
+ </body>
+
+</html>

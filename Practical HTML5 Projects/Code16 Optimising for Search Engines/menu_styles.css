@@ -1,0 +1,21 @@
+﻿/*#wrapper {
+	width:800px; text-align:center; margin:auto; min-width:800px;
+}*/
+
+div {
+	font-family: Tahoma, Helvetica;  text-align:center; margin:auto;
+
+}
+
+/*#menu {margin-left:250px; margin-right:250px; width:300px; text-align:center; min-width:800px;
+	
+}*/
+#menu {margin:0 300px 15px 200px; width:300px; text-align:center; 
+	
+}
+
+.clsCMOn, .clsCMOver {
+	font-size: 12px;
+        padding: 2px 4px;
+	color: black; text-align:center;
+}

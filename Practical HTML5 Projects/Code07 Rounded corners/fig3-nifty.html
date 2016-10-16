@@ -1,0 +1,99 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<title>A whole page with rounded corners and rounded panels</title>
+<meta charset=utf-8>
+<style type="text/css">
+body { width:100%; margin:auto; margin-top:0; padding: 10px; background: #bbd999; color: #000; text-align: center;
+    font: medium Arial; }
+h1,h2,p {margin: 0; padding: 0 10px; font-weight:normal; }
+p {padding:0; }
+h1{ font-size: 300%;color: #FFF; letter-spacing: 1px; height:164px; }
+h2 { font-size: 180%;line-height:1;color:#002455; margin-top:0; }
+img { border:0;
+}
+div#container {width:950px; 
+    margin: 0 auto 10px auto; padding:10px;text-align:left; background:#FFF; position:relative; clear:both; }
+div#mainpanel {width:950px;
+	margin:auto; margin-bottom:0; margin-top:-10px; background-color:#cee1ba; text-align:center; }
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+#hdr {padding-top:10px; width:100%; text-align:center; 
+ margin:auto; background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-position:65; }
+#leftcol { float:left; width:140px; background: #FFD154; margin-left:10px; }
+#rightcol { float:right; width:140px;background: #FFD154; padding:5px; margin-right:10px;}
+#rightcol h2 {font-size: 120%; color: #9E4A24; }
+#midcol{ margin-left:160px; margin-right:160px; margin-top:0; padding:0 10px 10px 0; }
+#mid-left-col { width:47%; float:left; }
+#mid-right-col { width:47%; float:right; }
+#ftr { clear:both; width:940px; background: #C4E786; padding:5px; margin-top:10px; text-align:center; }
+ul#nav { list-style-type:none; padding-left:0; margin-left:0;}
+ul#nav a { display:block; width:90px; background:#cee1ba;; margin:0 auto 2px auto; padding:4px; text-decoration:none; }
+/*SET SIDE MENU HYPERLINK STYLE*/
+a.navbtn:link {color: navy; background-color:#cee1ba; text-decoration:none; font-weight:normal; }
+a.navbtn:visited {color: navy; background-color:#cee1ba; text-decoration: none; font-weight:normal; }
+a.navbtn:active {color: navy; background-color:#cee1ba; text-decoration: none; font-weight:normal; }
+a.navbtn:hover {color: red; background-color:#FFD154; text-decoration: none; font-weight:normal; }
+/*DESCRIBE OFFER PANELS*/
+ul#about,ul#about li{list-style-type:none; margin:auto; padding:0}
+ul#about{width: 550px; margin:auto; text-align:center; }
+ul#about li{float:left;width: 150px; height:150px; padding:10px; margin:8px 8px 0 0; }
+li#adv1{ background: #FC0}
+li#adv2{ background: #9F3}
+li#adv3{ background: #39F}
+.clear { clear:both; }
+</style>
+  <script type="text/javascript" src="niftycube.js"></script>
+  <script type="text/javascript">
+window.onload=function(){
+Nifty("#container","big");
+Nifty("#mainpanel","same-height normal");
+Nifty("#leftcol,#rightcol", "same-height big");
+Nifty("#hdr,#ftr","normal");
+Nifty("#about li","top bottom big fixed-height");
+}
+</script>
+</head>
+<body>
+<div id="container">
+<div id="hdr"><h1><br>Rounded Corners</h1>
+</div><br>
+<div id="mainpanel"><br>
+<div id="leftcol">
+	<br>Menu column<br>
+	<ul id="nav">
+		<li><a  class="navbtn" href="page2.html">page 2</a></li>
+		<li><a  class="navbtn" href="page3.html">page 3</a></li>
+		<li><a  class="navbtn" href="page4.html">page 4</a></li>
+		<li><a  class="navbtn" href="page5.html">page 5</a></li>
+		<li><a  class="navbtn" href="page6.html">page 6</a></li>
+		<li><a  class="navbtn" href="page7.html">page 7</a></li>
+	</ul><br>
+</div>
+<div id="rightcol">
+<h2>Auxiliary Panel</h2>
+<p>This panel can be used for adverts, additional information, or items like validation certificates.</p>
+</div>
+<div id="midcol">
+<h2>Middle panel for content</h2>
+<ul id="about">
+    <li id="adv1"><h3>Budget web Hosting from &pound;1.99 per month</h3>
+	<br>
+	<a href="budget.html">
+	<img alt="£1.99 per month. Read More" title="£1.99 per month. Read More"height="39" src="images/read-more.gif" width="117" ></a><br>
+	</li>
+    <li id="adv2"><h3>Pro web Hosting from &pound;2.99 per month</h3>
+	<br>
+	<a href="proweb.html">
+	<img alt="£2.99 per month. Read More" title="£2.99 per month. Read More"height="39" src="images/read-more.gif" width="117" ></a></li>
+    <li id="adv3"><h3>Advanced web Hosting from &pound;4.99 per month</h3>
+	<br>
+	<a href="advanced.html">
+	<img alt="£4.99 per month. Read More" title="£4.99 per month. Read More"height="39" src="images/read-more.gif" width="117" ></a></li>
+</ul>
+<br class="clear">
+</div>
+<br style="clear:both">
+</div><div id="ftr">Footer goes here</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; background: #bee8ff; font-family:"times new roman"; font-size:medium; color:navy; 
+}
+#container {width:97%; max-width:960px; min-width:780px; margin:auto;
+}
+#main-content { width:100%; margin:0; padding:0;
+}
+header {width:100%; height:156px; background-image:url('images/header2.jpg'); text-align:center; background-repeat:no-repeat; background-position:center top;}
+img { border:0;
+}
+#creditcol { float:right; width:125px; text-align:center;
+}
+#midcontent { margin:0 135px 0 145px; text-align:center;
+}
+footer {text-align:center; clear:both;
+}
+br.clear { clear:both;
+}
+#mid-left-col {width:47%; float:left; text-align:left;
+}
+#mid-right-col {width:47%; float:right; text-align:left;
+}
+h1 { padding-top:30px; margin:0; text-align:center;
+}
+h2 { margin:0 0 5px 0; font-size:large; font-weight:bold; 
+}
+p.lft {text-align:left;
+}
+p.cntr {text-align:center;
+}
+/*set horizontal menu buttons general style*/
+#hnav {display:inline-block;  margin:10px auto 10px auto; width:450px; 
+height:42px; 
+}
+#hnav li {margin:10px; float:left; text-align:center; padding:5px;  list-style-type:none;
+}
+/*set general anchor style to fill the container*/
+#hnav li a {text-decoration:none; color:white; font-weight:bold; width:120px; padding:5px; text-align:center; 
+}
+/*mouseOut state (default)*/
+#hnav li a { background: #1A9CE0; border: 4px outset #AABAFF; text-align:center; margin-right:5px;
+}
+/* mouseover */
+#hnav li a:hover { background: #0A4ADF;   border: 4px outset #8ABAFF; width:120px; 
+}
+/* omousedown */
+#hnav li a:active 	{ background:#ABCBFF;  border: 4px inset #ABCBFF; 
+}
+/* set vertical button menu position */
+nav {width:130px; float:left;
+}
+ul	{  margin-left:0; padding-left:0;   
+}
+/* set general side button styles */
+li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; 
+}
+/* set general anchor styles */
+li a { display: block; width:115px; color: white; font-weight: bold; text-decoration: none 
+}
+/* specify state styles... */
+/* mouseout (default) */
+li a { background: #1A9CE0;  border: 4px outset #AABAFF;
+}
+/* mouseover */
+li a:hover	{ display:block; background: #0A4ADF; border: 4px outset #8ABAFF; width:115px;
+}
+/* omousedown */
+li a:active { background:#AECBFF; border: 4px inset #AECBFF; 
+}
+br.clear { clear:both; }
+/*various font sizes and colours*/
+.tiny { text-align: center; font-family: Arial; font-size: 8pt; color: #000000; 
+}
+p.cntr { text-align:center; 
+}
+p.lft { text-align:left; margin-top: 1px; 
+}
+p.right {text-align:right; 
+}

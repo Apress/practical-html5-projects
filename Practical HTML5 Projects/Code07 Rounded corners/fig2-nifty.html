@@ -1,0 +1,90 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<title>A whole page with rounded corners</title>
+<meta charset=utf-8>
+<style type="text/css">
+body{width:100%; margin:auto; margin-top:0; padding: 10px; background: #bbd999; color: #000; text-align: center;
+    font: medium Arial,sans-serif}
+h1,h2,p{margin: 0; padding: 0 10px; font-weight:normal}
+p{padding: 0 }
+h1{font-size: 300%;color: #FFF; letter-spacing: 1px; height:164px;}
+h2{font-size: 180%;line-height:1;color:#002455; margin-top:0; }
+#container{width:960px; 
+    margin: 0 auto 10px auto; padding:10px;text-align:left; background:#FFF; position:relative; clear:both;}
+#mainpanel {width:960px;
+	margin:auto; margin-bottom:0; margin-top:-25px; background-color:#cee1ba; text-align:center; }
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+#hdr {padding-top:10px; width:100%; text-align:center; 
+ margin:auto; background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-position:65; }
+#leftcol {float:left; width:140px; background: #FFD154; margin-left:10px; }
+#rightcol{float:right; width:140px;background: #FFD154; padding:5px; margin-right:10px;}
+#rightcol h2{font-size: 120%; color: #9E4A24}
+#midcol{margin-left:160px; margin-right:160px; margin-top:0; padding:0 10px 10px 0; }
+#mid-left-col { width:47%; float:left; }
+#mid-right-col {	width:47%; float:right;}
+#ftr{clear:both;width:950px; background: #C4E786;padding:5px; margin-top:10px; text-align:center}
+ul.nav { list-style-type:none; padding-left:0; margin-left:0;
+}
+ul.nav a { 	display:block; width:90px; background:#cee1ba;; margin:0 auto 2px auto; padding:4px;
+}
+/*SET MENU HYPERLINK STYLE*/
+a.navbtn:link {color: navy; background-color:#cee1ba; text-decoration:none; font-weight:normal; }
+a.navbtn:visited {color: navy; background-color:#cee1ba; text-decoration: none; font-weight:normal; }
+a.navbtn:active {color: navy; background-color:#cee1ba; text-decoration: none; font-weight:normal; }
+a.navbtn:hover {color: red; background-color:#ffd154; text-decoration: none; font-weight:normal; }  
+  </style>
+  <script type="text/javascript" src="niftycube.js"></script>
+  <script type="text/javascript">
+window.onload=function(){
+Nifty("#container","big");
+Nifty("#mainpanel","same-height normal");
+Nifty("#leftcol,#rightcol", "same-height big");
+Nifty("#hdr,#ftr","normal");
+}
+  </script>
+</head>
+<body>
+<div id="container">
+<div id="hdr">
+	<br><h1>Rounded Corners</h1>
+</div>
+<br>
+<div id="mainpanel"><br>
+<div id="leftcol"><br>Menu column<br>
+	<ul class="nav">
+		<li><a  class="navbtn" href="#">page 2</a></li>
+		<li><a  class="navbtn" href="#">page 3</a></li>
+		<li><a  class="navbtn" href="#">page 4</a></li>
+		<li><a  class="navbtn" href="#">page 5</a></li>
+		<li><a  class="navbtn" href="#">page 6</a></li>
+		<li><a  class="navbtn" href="#">page 7</a></li>
+</ul><br>
+</div>
+<div id="rightcol">
+<h2>Auxiliary Panel</h2>
+<p>This panel can be used for adverts, additional information, or items like 
+validation certificates.</p>
+</div>
+<div id="midcol">
+<h2>Middle panel for content</h2>
+<div id="mid-left-col"><br>
+</div><br>
+<div id="mid-right-col">
+<p>This method uses CSS and Javascript.<br>
+If Javascript is turned off in the users computer, the page differs only in that 
+the corners are not rounded.&nbsp;&nbsp; </p>
+	A clever Italian called Alessandro Fulciniti produced this simple 
+	Javascript/CSS solution.<br><br>
+	Full details can be found on his website 
+<a href="http://www.html.it/articoli/niftycube/index.html">
+	www.html.it/articoli/niftycube/index.html</a>
+</div>
+<img alt="Coly River" height="196" src="images/colrivblu.jpg" width="298"></div>
+<br>
+</div>
+<div id="ftr">Footer goes here
+</div>
+</div>
+</body>
+</html>

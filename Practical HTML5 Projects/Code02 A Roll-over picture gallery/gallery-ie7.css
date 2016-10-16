@@ -1,0 +1,3 @@
+﻿/*set the gallery block 10px further to the right*/
+#gallery-block { position:absolute; left: 165px; top:50px; 
+}

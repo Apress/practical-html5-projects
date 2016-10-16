@@ -1,0 +1,39 @@
+﻿/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+body {font-family:"times new roman"; font-size:medium; color:black; background:white url('images/yellowgradient2.gif') repeat-x;}
+#container {min-width:960px;  max-width:1100px; padding:0; margin:auto; }
+header {width:100%; margin:auto; height:60px; text-align:center;}
+nav {	float:left; margin:0; width :125px; display:block; padding:0; border:0 zoom:1;
+}
+#rightcol {float:right; width:120px; text-align: left; display:inline; margin:0; border:0
+}
+/* set general side button styles */
+nav ul {	margin-left:30px; padding-left:0;width:120px; list-style-type:none;
+}
+nav ul li { margin-bottom: 4px; text-align: center;  }
+/* set general anchor styles */
+nav li a { display: block; color: white; background:#D20B0D; font-weight: bold; text-align:center; }
+/* specify state styles. */
+/* mouseout (default) */
+nav li a { background: #D20B0D;  border: 4px outset #FFAAAA; text-decoration: none;  }
+/* mouseover */
+nav li a:hover	{ background: maroon;   border: 4px outset maroon;}
+/* onmousedown */
+nav li a:active { background:#AECBFF;  border: 4px inset #AECBFF }
+p.redarrow {text-align:center; 	padding-top: 250px;
+}
+.box { margin:0 150px 0 190px; padding:5px; text-align:center; border:1px solid black; border-bottom:0;
+}
+.box-bottom { margin:0 150px 0 190px;  padding:5px; text-align:center; border:1px solid black; 
+}
+img { border:0;
+}
+footer {clear:both; text-align:center;}
+h1 {font-size:xx-large; color:red; margin-top:10px; margin-bottom:5px; text-align:center;
+}
+h2 {font-size:x-large; font-weight bold; margin-top:5px; margin-bottom:5px; font-weight:bold;} 
+span.tiny {text-align: center; font-family: Arial; font-size: xx-small; color: #000;}
+p {margin-top:5px; margin-bottom:5px;}
+p.cntr {text-align:center;}
+p.lft {text-align:left; }

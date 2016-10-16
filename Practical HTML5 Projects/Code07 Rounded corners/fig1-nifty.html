@@ -1,0 +1,41 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<title>Nifty Corners: Javascript and CSS</title>
+<meta charset=utf-8 />
+<style type="text/css">
+body{padding: 20px;background: #FFF;color: #3C0012; text-align: center;
+    font:85%/1.45 "Arial";}
+h1,h2{margin: 0;padding: 0 10px;letter-spacing: -1px;font-weight:100;color: #FFF}
+h1{font-size: 200%}
+h2{font-size: 140%}
+p{margin:0;padding: 0 10px 1em}
+div#container{width:450px;margin: 0 auto;padding:10px 0;text-align:left}
+div#content{float:left;width:300px;padding:10px 0;background: #FFBD00}
+div#navpanel{float:right;width:145px;padding:10px 0;background:#42B4AC}
+</style>
+<script type="text/javascript" src="niftycube.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+Nifty("div#content,div#navpanel","same-height big" );
+}
+</script>
+</head>
+<body>
+<div id="container">
+<div id="content">
+<h1>Nifty Corners</h1>
+<p>This method of producing rounded corners was devised by a clever Italian 
+called Alessandro Fulciniti. This is the content panel. </p>
+<h2>Rounded corners without images</h2>
+<p>Until all browsers accept the CSS3 rounded corners tag then this javascript 
+workaround is a good interim solution.</p>
+<p>The rounded corners will be visible in all browsers from IE6 onwards. </p>
+</div>
+<div id="navpanel">
+<h2>Simple. Just Javascript and CSS.</h2>
+<p>This is another panel which could take a navigation menu</p>
+</div>
+</div>
+</body>
+</html>

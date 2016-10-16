@@ -1,0 +1,100 @@
+﻿/*MAINSTYLE.CSS*/
+/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
+/*reset browsers for cross-client consistency*/
+html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:0; padding:0 }
+img {border:0}
+#wrapper{text-align:center; background-color:#D7FFEB; font-family: "times new roman"; 
+font-size: medium; color: #000000; margin: auto; width:95%;}
+body {text-align:center; margin: auto; width:95%;}
+#bodyindex {text-align:center; margin: auto; width:780px;}
+/* set header height and background image */
+/*#hdr{ background-position:35% 20%; background-image:url('images/compbkgcrop.jpg'); 
+background-repeat:no-repeat; height:180px;	}*/
+#hdr{ margin-top:0; margin-bottom:0; background-position:35% top; background-image:url('images/compbkgcrop.jpg'); 
+background-repeat:no-repeat; height:160px; padding-bottom:0
+}
+#bigblue {	padding-top:110px; margin-bottom:0; padding-left: 8%; font-family :"times new roman";  font-size: 450%; color: #0080a0;; font-weight:bold;}
+#printbtn {
+	margin-bottom:10px; padding:5px; font-weight:bold;
+}
+/*#title-center{text-align:center; margin: auto; padding-left: 8%; margin-top:120px; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}*/
+/* set widths and float the columns */
+#leftcol	{ float: left; width: 48%; padding:2px; text-align:left; }
+#rightcol	{ float: right; width: 48%; padding:2px; text-align:left; }
+#leftcolindex	{ text-align:left; margin-left:0px; margin-right:0px }
+#rightcolindex	{ text-align:left; }
+/* Header image for the case when a background image is not used alter the size to suit*/
+#hdrimg	{ width: 250px; height:  125px	}
+/* set the size and position of a particular image in a column */
+#img1	{ float:left; margin-right:0px; margin-left:0}
+.img-left { float:left; margin-right:5px; margin-left:0}
+.img-right { float:right; margin-left:5px; margin-left:0}
+#listindex {margin-left:280px; font-weight:bold}
+.listcenter {margin:auto; text-align:left; width:550px}
+.one-line-space {
+	margin-bottom:1em;
+}
+/*MENU set horizontal menu and button general style*/
+/*#menu {	width:790px; text-align:center; margin-left:8%; margin-right:0 }*/
+#menu {	width:710px; text-align :center; margin:auto }
+/*#hmenew {margin-left:5px; margin-rignt:0; height:35px; text-align:center;
+	width: 705px;
+}*/
+#hmenew {margin-left:-10px; height:35px; text-align:center;
+	width: 705px;
+}
+
+li.hbtnew {display:inline; margin:auto; float:left; text-align:center; padding:3px; list-style-type:none;}
+/*set general anchor style to fill the container*/
+li.hbtnew a {display:inline; text-decoration:none; color:white; background-color:#0080a0; font-weight:bold; padding:4px;}
+/*mouseOut state (default)*/
+li.hbtnew a { background: #0080a0;  border: 4px outset #AABAFF;}
+/* mouseover state*/
+li.hbtnew a:hover { background: #0060a0; color:yellow;  border: 4px outset #8ABAFF }
+/* omousedown state*/
+li.hbtnew a:active  { background:#ABCBFF;  border: 4px inset #ABCBFF }		
+/*TYPOGRAPHY*/
+/*span.bigblue {padding-left: 8%; font-family :"times new roman";  font-size: 150%; color: #0080a0;; font-weight:bold;}*/
+/* ensure footer stays at the bottom */
+#ftr { clear: both; text-align:center;}
+/*set headings to have no line space*/
+h1, h2, h3, h4, h5 { margin-top:0; margin-bottom:0; }
+span.plus10 {font-size:110%} 
+span.plus20 {font-size:120%;}
+span.plus30 {font-size:130%;}
+span.small {font-size:small}
+span.tiny {font-size: x-small;}
+.plus10 {font-size:110%} 
+.plus20 {font-size:120%;}
+.plus30 {font-size:130%;}
+.small {font-size:small}
+.tiny {font-size: x-small;}
+
+/*PARAGRAPHS*/
+p.title {margin-top:100px;}
+p.cntr {
+	text-align:center;
+}
+p.lft {text-align:left; align:left;}
+p.right {text-align:right;}
+/*FORM Position the form elements on the page*/
+#name {margin-left:0; text-align :right; padding-right:5%; width:600px;}
+#email {text-align:right; padding-right:5%; width:600px;}
+#tel {text-align:right; padding-right:5%; width:600px;}
+#form {width:100%; margin:auto; text-align:center;}
+.chk1 {text-align:left; padding-left :40%; width:500px;}
+#rad {text-align:left; padding-left :40%; width:500px;}
+#sug {text-align:left; padding-left:33%; width:500px;}
+/*set blue uparrow details*/
+.blue-arrow {text-align:center; border-style:none; vertical-align:middle; }
+/*set alternative hyperlink colour black 10pt*/
+a.other10normal:link {color: black; text-decoration:none; font-weight:normal; font-size:small;}
+a.other10normal:visited {color: black; text-decoration: none; font-weight:normal; font-size:small;}
+a.other10normal:active {color: black; text-decoration: none; font-weight:normal; font-size:small;}
+a.other10normal:hover {color: red;text-decoration: none; font-weight:normal; font-size:small;}
+
+/*set alternative hyperlink colour black 12pt*/
+a.bold12:link {color: black; text-decoration:none; font-weight:normal; font-size:medium; font-weight:bold;}
+a.bold12:visited {color: black; text-decoration: none; font-weight:normal; font-size:medium;}
+a.bold12:active {color: black; text-decoration: none; font-weight:normal; font-size:medium;}
+a.bold12:hover {color: red;text-decoration: none; font-weight:normal; font-size:medium;}

@@ -1,0 +1,59 @@
+﻿body { 	text-align: center; background: #e6e6e6;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+#wrapper { margin: -20px auto 0 auto; width: 940px; border:10px white solid; padding:0;
+}
+header { width: 940px; height: 154px; margin: 0; border-bottom:10px white solid; background: url(images/bluepan.jpg);
+}
+article { margin-left:10px;
+	width:40%; display:inline; float:left; text-align:left;
+}
+#mainContent {margin:0; width: 940px; float: left; background-color:#aac9f6;
+
+}
+nav { width: 120px; margin-right:10px; padding: 0 5px 5px 0; float: right; 
+}
+footer { margin:0; text-align:center; clear: both; background-color:#aac9f6;
+}
+br.clear { clear:both;
+}
+/*Fonts*/
+body { font: 76%/1.6 "Lucida Grande", Geneva, Verdana, sans-serif;
+}
+a { font-weight: bold; color: navy; text-decoration: none; border-bottom: 1px solid navy;
+}
+a:hover {color:#906; border-bottom: 1px solid #906;
+}
+header h1 { color: #fff; padding: 50px 0 0 20px; margin: 0; font-size: 2.6em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+}
+h2, h3, h4 { margin-top: 0; color: black; font-weight: bold;
+}
+h2 { font-size: 2.2em; margin-bottom:0;
+}
+h3, nav h2 { font-size: 1.6em; margin-bottom:0;
+}
+h4 { font-size: 1.2em; margin-bottom:0;
+}
+p { margin-top:0; margin-bottom:6px;
+}
+#mainContent p, #mainContent h2, #mainContent h3, #mainContent h4, #mainContent ul, #mainContent ol {
+	margin-left: 10px; margin-right: 10px; background-color:#aac9f6;
+}
+nav ul, nav ul li { list-style: none; margin: 0 0 2px 10px; padding: 0;
+}
+/*SET 4 SIDED SHADOW*/
+.shadow-one {position:absolute; padding-top:60px; padding-left:60px; }
+
+.corner-a {position:absolute; right:0; top:-20px; width:60px; height:60px; background:url('images/shadow30px.png') right top no-repeat; }
+
+.corner-b {position:absolute; left:0; bottom:0; width:60px; height:60px; background:url('images/shadow30px.png') left bottom no-repeat;}
+
+.shadow-two { position:relative; background:url('images/shadow30px.png') right bottom no-repeat;}
+	
+.shadow-three { position:relative; left:-60px; top:-60px;  background:url('images/shadow30px.png') left top no-repeat; }
+
+.shadow-four {	position:relative; left:30px; top:30px; }	
+

@@ -1,0 +1,43 @@
+﻿/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+body { background-color:#D7FFEB; font-family: 'Trebuchet MS'; font-size: 70%;
+	margin: 20px;
+}
+#container { width:960px; margin:auto;
+} 
+header { background-position:35% top; background-image:url('images/compbkgcrop.jpg'); 
+background-repeat:no-repeat; height:160px; padding-bottom:0;
+}
+h1 { padding-top:110px; padding-left: 310px; font-family :"times new roman";  font-size: 450%; color: #0080a0;; font-weight:bold; 
+}
+h2 { text-align:center;
+}
+/* Navigation */
+nav { height:37px; border-bottom: 2px solid #506BB1; margin: auto; margin-top:10px; width: 900px;
+}
+nav ul { margin-left:70px;
+}
+nav li {border-bottom: 2px solid #506BB1; list-style: none; float: left;
+	background: #FFF url(images/right_side.png) no-repeat right top; margin-right: 5px;
+	height: 37px;
+}
+nav a { display: block; padding: 7px 15px 4px 15px; background-image: url(images/left_side.png); background-repeat: no-repeat;
+	background-position: left top; text-align: center; text-decoration: none; color: #FFF; font-weight: bold;
+	font-size: 1.2em; text-transform: uppercase;
+}
+nav a:hover { color:yellow;
+}
+#active { border-bottom: none; color:navy; list-style: none; float: left;
+	background: #FFF url(images/right_side-pale.png); background-repeat:no-repeat; 
+	background-position: right top; margin-right:  5px; height:39px;
+}
+#active a { display: block; border-bottom:none; padding: 7px 15px 4px 15px;
+	background: url(images/left_side-pale.png); background-repeat: no-repeat;
+	background-position: left top; text-align: center; text-decoration: none;
+	color: navy; font-weight: bold;
+	font-size: 1.2em; text-transform: uppercase;
+    height: 28px;
+    }
+#content { width:900px; border: 2px navy solid; margin:-15px auto 5px auto; border-top:0;
+}

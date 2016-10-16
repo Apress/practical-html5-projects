@@ -1,0 +1,23 @@
+﻿/*flood the screen with yellow*/
+body { width:100%; text-align: center; background-color:yellow; font-family:"times new roman"; font-size:large; font-weight:bold;
+}
+#container {  width:95%; margin:auto; background-color:white; text-align: center; max-width:1200px; min-width:960px;}
+#hdr { 	font-size:x-large;font-weight:bold; }
+/* set widths and float on nav col and col 3*/
+ul { float: left;  padding:0; margin:0; width: 100px; height:120px; 
+}
+li  { padding-left:0; margin-left:0; list-style-type:none; text-decoration:underline;
+}
+#col-3	{ float: right; width: 100px; height:120px;	
+}
+
+/* set panel margins 5px greater than col-1 & col-3 widths */
+#main-panel	{ margin-left: 105px; margin-right:105px; background-color:white;	
+} 
+/* force footer to stay at the bottom */
+#ftr { clear: both;
+}
+/* color the elements - for clarity only */
+#hdr, #ftr	{ background: fuchsia;		}
+ul, #col-3	{ background: aqua;		}
+#main-panel		{ background: white;		}

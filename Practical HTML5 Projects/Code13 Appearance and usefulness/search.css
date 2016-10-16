@@ -1,0 +1,22 @@
+﻿/*FORMUL-ACCESS.CSS*/
+/*reset browsers for cross-client consistency*/
+html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:0; padding:0 }
+img {border-style: none;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
+body {text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
+font-size: medium; color: #000000; margin: auto; width:95%;}
+/* set header height and background image */
+#hdr{ margin-top:0; margin-bottom:0; background-position:45% top; background-image:url('images/compbkgcrop.jpg'); 
+background-repeat:no-repeat; height:160px; padding-bottom:0	}
+h1 {padding: 110px  0 0 12%; margin-bottom:0; font-family :"times new roman";  font-size: 250%; color: #0080a0;; font-weight:bold;}
+#hdr {
+	position:relative;
+}
+.search {
+	position:absolute; top:10px; right:40px;
+	height: 56px;
+}

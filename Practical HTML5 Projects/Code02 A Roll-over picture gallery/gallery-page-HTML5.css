@@ -1,0 +1,98 @@
+﻿/*set attributes for consistent appearance in all browsers*/
+html, body, p, ul, li, h1, h2 {	margin:0; padding:0; 
+}
+/*set images to have no borders*/
+img { 	border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+/*SET FONTS*/
+span.small { font-size:small;
+}
+h1 { font-size:x-large; font-family:"times new roman"; text-align:center;
+}
+h2 {font-size:large; font-family:"times new roman"; text-align:center;
+}
+/*PAGE LAYOUT*/
+body {margin:auto; width:970px; 
+}
+header {
+	width:970px;
+}
+nav { float:left; margin-left:10px; width:115px;
+}
+nav ul { margin-left:0; border:0; width:115px;
+}
+/*set far right column for ads*/
+#rightcol { width:150px; float:right; text-align:center;	
+}
+#rightcol p.advert {font-size:small; margin-top:190px;
+} 
+/*set middle column for main content*/
+#midcol { margin-left:135px; margin-right:155px;
+}
+/*set gallery block position*/ 
+#gallery-block { position:relative; left: 30px; top:10px; 
+}
+/*set footer*/
+footer { 	clear:both; color:black; text-align:center; width:970px;
+}
+.clear { clear:both;
+}
+/*set menu buttons*/
+li.btn a { display:block; background-color :#66CCFF; color:black; font-weight:bold; padding:4px;
+	margin-left:0; text-align:center; list-style-type:none; text-decoration:none; width:110px;
+}
+li.btn a:hover { background-color:blue; color:white;
+}
+li.btn { width:110px;
+}
+/*SET THUMBNAIL GALLERY BLOCK*/  
+/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;
+} 
+/*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; 
+} 
+/*remove bullets from the un-ordered list elements and create the
+MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px; position: absolute; top: 10px; left: 330px;
+	visibility: hidden;
+}
+/* MouseOver state (hover)- this reveals larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid { width: 260px; height:390px;
+	position: absolute; top: 10px; left: 245px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 3nd column of thumbnails 170px further over to right*/
+#col-3	{ position: absolute; top: 0; left: 175px; width:95px; }
+li	{ margin: 5px; list-style-type:none;	
+}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid {
+	width: 260px; height:390px;
+	position: absolute; top: 10px; left: 155px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-3a:hover { background: white; 
+}
+#col-3 a:hover img.hid { visibility:visible; 
+}

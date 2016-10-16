@@ -1,0 +1,44 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<title>Semantic tags with JavaScript support for IE 7 and 8</title>
+<meta charset=utf-8 />
+<style>
+body { width:500px; margin:auto; 
+}
+header, nav, article, footer { display:block; 
+}
+header { width:500px; background-color:#FF9966; text-align:center; margin:auto;
+}
+nav { float:left; width:25%; background-color: #FF9966; margin-bottom:10px; 
+}
+article { float:right; width:70%; background-color:#FF9966; margin-bottom:10px;
+}
+footer { clear:both; background-color:#FF9966; text-align:center;
+}
+</style>
+<!--[if lte IE 8]>
+<script src="html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<header>
+<h1>header goes here</h1>
+</header>
+<nav>
+<ul>
+<li><a href=”page-one.html” >Page One</a></li>
+<li><a href=”page-two.html” >Page Two</a></li>
+<li><a href=”index.html” >Home page</a></li>
+</ul>
+</nav>
+<article>
+<strong>Article</strong><br>Are you illiterate? Write today for free course.
+</article>
+<article>
+<strong>Another Article</strong><br>Stock up for Christmas. Limited to one per family
+</article>
+<footer>
+<strong>Footer.</strong> Perhaps for a copyright statement
+</footer> 

@@ -1,0 +1,6 @@
+﻿body { color: #fff; 
+}
+#shadow {
+	margin:20px auto 0 auto;
+}
+#shadow { box-shadow: 0 0 6px 6px #888; width: 298px; height:196px;}

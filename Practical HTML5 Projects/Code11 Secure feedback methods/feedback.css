@@ -1,0 +1,45 @@
+﻿/*FEEDBACK.CSS*/
+/*reset browsers for cross-client consistency*/
+html,body,h1,h2,h3,h4,h4,h5,h6,p {margin:0; padding:0 
+}
+img {border-style: none; float: none; margin-left: 0; margin-right: 0;
+}
+/*LAYOUT position content at horizontal centre of screen for IE and Mozilla*/
+body {text-align:center; background-color:#D7FFEB; color:black; font-family: "times new roman"; max-width:1024px; min-width:800px;
+font-size: medium; color: #000000; margin: auto; width:95%;
+}
+/*The h1 heading is not used on the form shown; its inclusion is for a probable h1 heading on your own form*/
+h1 {padding: 110px 0 0 12%; font-family :"times new roman";  font-size: 250%; color: #000;; font-weight:bold;}
+h2 { margin-top:15px; }
+span.red {	font-size:medium; color:red; font-weight:bold;
+} 
+/*center the back button on the thankyou page*/
+#back-button { margin:auto; text-align:center; width:200px; height:25px; padding:5px; background-color:brown; color:white; font-size:110%; font-weight:bold; 
+}		
+#back-button a { text-decoration:none; color:white;
+}
+#back-button a:hover { color:red;
+}
+/*set heading details*/
+h1,h2 , h3, h4, h5 { margin-top:0; margin-bottom:10px; 
+}
+h2 { font-size:130%; font-weight:bold; 
+}
+h3 { font-size:110%; font-weight:bold; text-align:center;
+}
+/*PARAGRAPHS*/
+p {margin-bottom:10px; margin-top:0;
+}
+/*FORM. Position the form elements on the page*/
+#form {width :500px; margin:auto; text-align:center;
+}
+.label { float:left; width: 400px; text-align:right; clear:left;
+}
+.chk1 {text-align:left; padding-left :30%;
+}
+#rad {text-align:left; padding-left :30%;
+}
+#sug {text-align:center; margin:auto;
+}
+#submit {text-align:center;
+}

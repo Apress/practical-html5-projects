@@ -1,0 +1,14 @@
+/* Set styles to equalise browser rendition*/
+html, body, h1, h2, h3, h4, h5, p, ol, ul, li { padding: 0; margin: 0; 
+}
+body {font-size: 100%; font-weight: normal;
+}
+/* end of style equalisation */
+p { background:white  margin:auto; text-align:center; 
+}
+#container { margin:auto; text-align:center; width:97%; min-width:800px; max-width:1200px;
+}
+a { background: orange; color:navy;
+}
+.inline-block a { display:inline-block; width:110px; height:30px; line-height:30px; text-align:center;
+}

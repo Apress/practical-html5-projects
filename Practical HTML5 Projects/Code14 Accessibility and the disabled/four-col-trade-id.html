@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Four column table but using id instead of scope</title>
+<style type="text/css">
+table { width: 330px; border:1px black solid; border-collapse:collapse;
+font-family: "times new roman"; 
+}
+td { padding:0 5px 0 5px; border:1px black solid; text-align:center; 
+}
+th { text-align:left; padding:0 5px 0 5px; border:1px black solid; 
+}
+caption { font-weight:bold;
+}
+.right { text-align:right;
+}
+</style>
+</head>
+<body>
+<table summary="Table 14-6. As table 5 but not using scope">
+<caption>Local Tradesmen</caption>
+<tr> <th></th><!--empty cell--> 
+<th id="plumber">Plumber</th>
+<th id="electrician">Electrician</th>
+<th id="carpenter">Carpenter</th>
+</tr>
+<tr>
+<th id="ha">HandyAndy</th>  
+<td headers="ha plumber">Yes</td> 
+<td headers="ha electrician">No</td>
+<td headers="ha carpenter">Yes</td>
+</tr>
+<tr>
+<th id="el">BoilerMan</th>
+<td headers="el plumber">Yes</td>
+<td headers="el electrician">Yes</td>
+<td headers="el carpenter">No</td>
+</tr>
+<tr>
+<th id="ca">Chippendale</th>
+<td headers="ca plumber">No</td>
+<td headers="ca electrician">No</td>
+<td headers="ca carpenter">Yes</td>
+</tr>
+</table>
+</body>
+</html>

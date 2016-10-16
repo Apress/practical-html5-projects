@@ -1,0 +1,43 @@
+<!doctype html> 
+<html lang=en>
+<head>
+<title>Semantic tags with two articles side by side</title>
+<meta charset=utf-8>
+<style>
+body { 	width:500px; margin:auto; }
+header, nav, footer { display:block; }
+article { 	display:inline; }
+header { width:500px; background-color:#FF9966; text-align:center; margin:auto; }
+h1 { margin-bottom:10px; }
+nav { float:left; width:25%; background-color: #FF9966; margin-bottom:10px; }
+article { float:left; width:33%; background-color:#FF9966; margin:0 0 0 10px; padding:6px;}
+footer { clear:both; background-color:#FF9966; text-align:center;}
+h2 { font-size:large; font-weight:bold; margin-top:0; margin-bottom:0; }
+</style>
+<!--[if lte IE 8]>
+<script src="html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<header>
+<h1>header goes here</h1>
+</header>
+<nav>
+<ul>
+<li><a href=”page-one.html” >Page One</a></li>
+<li><a href=”page-two.html” >Page Two</a></li>
+<li><a href=”index.html” >Home page</a></li>
+</ul>
+</nav>
+<article>
+<h2>Article</h2>Are you illiterate? Write today for a free course.<br>Easy payment terms. 
+</article>
+<article>
+<h2>Another Article</h2>Stock up for Christmas. Limited to one per family.<br>Free Delivery &pound;2
+</article>
+<footer>
+<strong>Footer.</strong> Perhaps for a copyright statement
+</footer>
+</body>
+</html> 

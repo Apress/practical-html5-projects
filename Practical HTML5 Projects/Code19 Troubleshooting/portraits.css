@@ -1,0 +1,43 @@
+﻿body {min-width:980px; font-family:"times new roman"; font-size:medium; color:black; margin:auto; max-width:1000px;
+}
+#hdr {width:100%; margin:auto; height:60px; text-align:center;
+}
+/* use display:inline to remove IE6 double margin bug from side menu*/
+#leftcol {float:left; margin-left:0; width :135px; display:inline; padding:0; zoom:1;
+}
+#uparrow { text-align:center; 
+	margin-top:500px;
+}
+img { border:none;
+}
+#midcol-portraits {margin-left:175px; margin-right:15px; zoom:1;
+}
+div .figure { float:left; margin-right:5px; display:inline;
+}
+.figure p { font-size:80%; 	height: 15px; margin:0 auto 0 auto; text-align:center; width:200px;
+}
+#gallery img { margin-right:20px; margin-top:5px;
+}
+#aside { float:left; width:260px;
+}
+#ftr {clear:both; text-align:center;}
+/* set side menu position */
+ul#menu	{ float:left; margin-left:0; width:120px;}
+/* set general side button styles */
+li.btn { margin-bottom: 4px; text-align: center; list-style:none; }
+/* set general anchor styles */
+li.btn a { display: block; color: white; background:#D20B0D; font-weight: bold; text-decoration: none }
+/* specify state styles... */
+/* mouseout (default) */
+li.btn a { background: #D20B0D;  border: 4px outset #FFAAAA;}
+/* mouseover */
+li.btn a:hover	{ background: maroon;   border: 4px outset maroon;}
+/* omousedown */
+li.btn a:active { background:#AECBFF;  border: 4px inset #AECBFF }
+/*various font sizes and colours*/
+h1 {font-size:300%; font-weight:bold; color:#D20B0D; margin-top:0; margin-bottom:0; font-family:"Calligraph421 BT"; font-style:italic; text-align:center;
+}
+span.swac {font-size:x-large; font-weight:bold; color:#D20B0D; font-family:"Calligraph421 BT"; font-style:italic; text-align:center;
+}
+h3,h4 {	margin-top:0; margin-bottom:0;}
+h2 {font-size:x-large; font-weight:bold; margin-top:0; margin-bottom:0;} 

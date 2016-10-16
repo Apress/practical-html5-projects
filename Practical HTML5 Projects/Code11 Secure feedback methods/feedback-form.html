@@ -1,0 +1,78 @@
+<!doctype html> 
+<html lang=en>
+<head>
+<title>Send a suggestion to my computer help and advice service</title>
+<meta charset=utf-8>
+<!--<meta details go here>-->
+<link rel="stylesheet" type="text/css" href="feedback.css" media="screen">
+</head>
+<body>
+<a id="top"></a>
+ <br><div>
+<h2>
+Send a suggestion to my computer help and advice service</h2>
+  <h3>Required items <span class="red">*</span></h3>
+<!--start of form-->
+<div id="form">
+	<form action="form-handler.php" method="post"><!-- style="width: 454px; margin-right: 0px;"-->
+    <div>
+    	<label class="label" for="username"><strong>Your Name</strong><span class="red">*</span>
+	<input id="username" name="username" size="30"></label></div>
+<br><br><div>
+    <label class="label" for="useremail"><strong>Your Email Address</strong><span class="red">*</span>
+	  
+    <input id="useremail" name="useremail" size="30"></label>
+</div><br><br><div>
+    <label class="label" for="phone"><strong>Your Telephone Number </strong>
+    
+	<input id="phone" name="phone" size="30"></label></div> 
+ <br><br>
+		
+<div>
+  <h3>Please select your operating system <span class="red">*</span>
+  </h3>
+  </div>
+  			  <div class="chk1">
+    <input id="chkbox1" name="w98me2000" value="Yes" type="checkbox">
+    <label for="chkbox1"><strong>Windows ME or 2000</strong></label>
+  </div><br>
+  <div class="chk1"> 
+    <input id="chkbox2" name="xp" value="Yes" type="checkbox">
+	<label for="chkbox2"><strong>Windows XP Home or Pro</strong></label>
+  </div><br>
+  <div class="chk1">
+    <input id="chkbox3" name="vista" value="Yes" type="checkbox">
+	<label for="chkbox3"><strong>Microsoft Vista</strong></label>
+  </div><br>
+  <div class="chk1">
+    <input id="chkbox4" name="windows7" value="Yes" type="checkbox">
+	<label for="chkbox4"><strong>Windows 7</strong></label>
+  </div><br>
+				<div>
+<h3>Please select your computer<span class="red">*</span></h3>
+</div>
+
+  <div id="rad"> 
+  <input id="laptop" name="computer" value="Laptop" type="radio"> <strong> 
+    <label for="laptop">Laptop</label></strong>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <input id="desktop" name="computer" value="Desktop" type="radio">
+    <label for="desktop"><strong>Desktop</strong></label></div>
+  
+  <div id="sug">
+   <label for="suggest"><strong><br>
+	  Please type your suggestion or message</strong><span class="red">*</span></label>
+	  <br>
+      
+	  <br>
+   <textarea id="suggest" name="suggestion" rows="12" cols="40"></textarea><br><br>
+  </div>
+  <div id="submit">
+  <input id="sb" value="Send your suggestion or message" title="Send suggestion or message" 
+  alt="Send suggestion or message" type="submit"></div>
+ </form>
+ 
+ </div>
+<!--end of form--></div>
+</body>
+</html>

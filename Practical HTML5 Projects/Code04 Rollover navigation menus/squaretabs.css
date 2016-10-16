@@ -1,0 +1,43 @@
+﻿/* Set styles to equalise browser rendition*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body {text-align:center; margin: 20px; background: #bee8ff; font: medium arial; 
+}
+#container {width:960px; margin:-10px auto 0 auto; 
+}
+header {margin-top:0; height:156px; width:100%; 
+background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:center;
+ border-bottom:0; 
+ }
+h1 {font-family:Arial; font-size:320%; color:white; font-weight:normal; 
+text-align:center; padding-top:35px; margin-bottom:-10px; height: 94px; margin:auto;
+}
+/*set the generic tab style--and set position so that it overlaps the header*/ 
+	nav {position:relative; top:-13px; color: navy; border-bottom: 1px solid black;
+		margin: -25px 0 0 0; padding: 0px; padding-left: 10px z-index: 1; }
+/* use display:inline to remove IE6 double margin bug*/
+	nav li { display: inline; overflow: hidden; list-style-type: none; 
+	}
+/*set tab colour*/
+	nav a, a.active { color: navy; background: #81d9f6; font: bold 1em "Trebuchet MS", Arial, sans-serif;
+		border: 1px solid black; padding: 2px 5px 0px 5px; margin: 0; text-decoration: none; 
+		}
+ /*make a 3px wide bottom border on tab the same colour as the page*/  
+	nav a.active { background: #cfecf5; color:navy; border-bottom: 3px solid #cfecf5; 
+	}
+  /*hovering over a non-active tab shows an aqua tab*/
+	nav a:hover { 	background: aqua; 
+	}
+ 	nav a:visited { color: navy; 
+	}
+ /*hovering over the active tab shows navy text*/
+	nav a.active:hover { background: #cfecf5; color: navy; 
+	}
+/*set the position of the content to butt up to the menu tabs*/ 
+	#content {margin-top:0; font : 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+		position:relative; top:-13px; text-align: left; background: #cfecf5;
+		padding: 20px; border: 1px solid black; border-top: none; z-index: 2;
+		}
+ 

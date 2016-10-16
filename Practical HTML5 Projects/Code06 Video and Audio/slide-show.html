@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html> 
+<head>
+<title>Slide show for figure 6-8 based on BarelyFitz Designs</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="slideshow.js">
+</script>
+<script type="text/javascript">
+SLIDES = new slideshow("SLIDES");
+
+s = new slide();
+s.src = "slides/Mitzi1.jpg";
+s.text = "Open link in same window";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "slides/Mitzi2.jpg";
+s.text = "Open link in same window";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "slides/Mitzi3.jpg";
+s.text = "Open link in same window";
+SLIDES.add_slide(s);
+
+s = new slide();
+s.src = "slides/Mitzi4.jpg";
+s.text = "Open link in same window";
+SLIDES.add_slide(s);
+
+</script>
+</head>
+
+<body onLoad="SLIDES.pause()">
+<a href="javascript:SLIDES.hotlink()">
+<img name="SLIDESIMG" src="slides/Mitzi1.jpg"
+ width="300" height="229" border="1" alt="slideshow image">
+</a>
+<script type="text/javascript">
+<!--
+if (document.images)
+{ 
+SLIDES.set_image(document.images.SLIDESIMG);
+SLIDES.update();
+}
+//-->
+</script>
+
+<form>
+<input type=button value="Play" onClick="SLIDES.play()">
+<input type=button value="Pause" onClick="SLIDES.pause()">
+<input type=button value="Next" onClick="SLIDES.next()">
+<input type=button value="Previous" onClick="SLIDES.previous()">
+</form>
+<script type="text/javascript">
+if (document.images)
+{
+  SLIDES.set_image(document.images.SLIDESIMG);
+  //SLIDES.set_textid("SLIDESTEXT"); // optional
+  //SLIDES.update();
+  SLIDES.play(); //optional
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿/*TWOCOL.CSS*/
+body { background-color:#D7FFEB; font-family: "Times New Roman"; font-size: medium; color: #000000; 
+}
+#container {text-align:center; margin: auto; width:960px;
+}
+img { border:0;
+}
+#leftcol	{ float: left; width: 48%; padding:2px; text-align:left; 
+}
+#leftcol img { float:left; 	margin-right:5px; 
+}
+#rightcol	{ float: right; width: 48%; padding:2px; text-align:left; 
+}
+#ftr	{ clear: both	}/* ensure footer stays at the bottom */
+#hdr { background-position:35% 20%; background-image:url('images/compbkgcrop.jpg'); background-repeat:no-repeat; width:960px; height:170px; 
+}
+#button {margin:auto; 
+}	
+h1 { position:absolute; top:90px; left:300px; width:450px; font-family:"Times New Roman";  font-size: 300%; color: #0080a0; font-weight:bold; margin-bottom:5px; 
+}
+.uparrow { text-align:center; 
+}
+#hmenu { width:790px; text-align:center; margin:5px 0 10px 100px; 
+}
+li.hbtnew {display:block; margin:auto; float:left; text-align:center; padding:3px; list-style-type:none; list-style-position:inherit; 
+}
+li.hbtnew a {display:block; text-decoration:none; color:white; background-color:#0080a0; font-weight:bold; padding:4px; 
+}
+li.hbtnew a { background: #0080a0;  border: 4px outset #AABAFF; 
+}
+li.hbtnew a:hover { background: #0060a0; color:yellow;  border: 4px outset #8ABAFF; 
+}
+li.hbtnew a:active  { background:#ABCBFF;  border: 4px inset #ABCBFF; 
+}
+h3, h4, h5, h6 { margin-top:0; margin-bottom:0; 
+}
+span.tiny {font-size: x-small;
+}
+.cntr { text-align:center; margin:auto; 
+}
+.lft {text-align:left; 
+}
+.right {text-align:right; 
+}

@@ -1,0 +1,38 @@
+/*add display attributes for the semantic tags
+header, footer, section, article, nav { display:block; }/*
+change #header to header and remove div*/
+body, #header, #content, { margin:0; padding:0; border:0; }
+body { margin:auto; background:url(images/green-grad.jpg) repeat-x; }
+/*Insert a tag for the topmost block*/
+/*#container { width:940px; margin:0 auto 0 auto;}*/
+/*change #header to header*/
+#header {width:920px; height:180px; padding:0; border:10px white solid; margin: 0 auto 0 auto; background:url(images/header3.jpg); }
+h1 { font-size:300%; color:white; position: relative; left:90px; top:55px; width:480px;}
+#content {background-color:transparent; border-left:10px white solid; border-right:10px white solid; border-bottom:10px white solid; width: 904px; margin:0 auto 0 auto; padding:8px; font-size:medium; color:maroon;}
+h2 { font-size:x-large; color:white; margin:0 0 10px 0;}
+h3 { font-size:large; color:white; margin:0 0 6px 0;}
+/*add article tag to style sheet*/
+article { margin:0; padding:0;}
+/*change leftcol to primary-item*/
+#left-col {float:left; width: 310px; vertical-align:top;}
+/*remove #rightcol*/
+/*rename #midcol to #secondary-item*/
+#mid-col { margin:10px 145px 0 315px; vertical-align:top;
+}
+/*set side menu block position and width; Change right margin from 10px to 45px*/
+ul { width:135px; margin:20px 15px 0 0; float:right; }
+/* set general menu button styles including list-style-type:none; to remove bullets.*/
+li.btn { margin-bottom: 3px; text-align: center; list-style-type:none; width:130px; }/* set general anchor styles and include the zoom fix for IE6*/
+li.btn a { display: block; color: white; font-weight: bold; text-decoration: none; zoom:1;}
+/* specify mouse state styles */
+/* mouseout (default) */
+li.btn a { background:#559a55; color: white; border: 5px outset #559a55; padding-bottom:3px;}
+/* mouseover */
+li.btn a:hover { background: red;  color:white; border: 5px outset red;}/*link active*/
+li.btn a:active { background:maroon; border: 5px inset maroon; }
+br.clear { clear:both;}
+/*remove #midcol img { margin-left:10px; }*/
+/* change #footer to footer */
+#footer { clear:both; color:maroon;}
+/*Centring only works within a paragraph nested in the footer*/
+#footer p { text-align:center; font-size:70%; margin:5px 0 5px 0;}

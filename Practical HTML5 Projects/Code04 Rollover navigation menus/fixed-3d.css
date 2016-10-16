@@ -1,0 +1,29 @@
+﻿/* Set styles to equalise browser rendition*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {  padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+body { width:960px; margin:auto; background-color:#99FF66; font: 100% Arial; font-size: 100%; font-weight: normal;
+}
+#wrapper {position:relative; top:0; left:0; width:950px; margin:auto; text-align:center;
+}
+header {width:100%; height:80px; color:black; background-color:#FFCC00; padding-top:10px;
+}
+h1 { font-size:200%; font-weight:bold; margin-top:20px;	
+}
+#main-content {width:950px; margin:65px auto 0 auto; background-color:white; color:black; text-align:center; font-weight:bold; 
+}
+footer {margin:10px auto 0 auto; width:950px; font-weight:bold; text-align:center; background-color:#FFCC00; color:black; clear:both;
+}
+nav {position:absolute; top:100px; left:3.6%; width: 866px; padding: 5px; list-style: none; overflow: hidden; height: 35px; 
+}
+nav li { display:inline; padding: 5px; padding-top:15px; margin:5px 0 0 2px; height:25px; width:100px;
+}
+nav a {height:25px; width:100px; color: #fff; font-size:80%; font-size: 100%; font-weight:bold; text-decoration: none;
+   background-color: #72b720; border: 4px outset #5edd51; padding:5px 5px 0 5px; display: inline-block;
+}
+.clear {
+	clear:both;
+}
+nav a:hover { font-weight: bold; background-color:green; color:white;
+}

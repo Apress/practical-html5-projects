@@ -1,0 +1,66 @@
+﻿body, header, div, #content, { margin:0; padding:0; border:0; 
+}
+body{background: #39F; color: navy; font: medium Arial;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+h1,h2,p{margin: 0; padding: 0; 
+}
+h1{font-size: 380%; color: #FFF; font-family:Arial; font-weight:bold; color:white; letter-spacing: 1px; width:560px;  
+position:absolute; top:55px; left:20px;  
+}
+h2{font-size: 150%; color:navy; margin-top:-10px; }
+.small { 	font-size:small;
+}
+.tiny {
+	font-size:x-small; text-align:center;
+}
+#container{position:relative; width:95%; max-width:1024px; min-width:920px;
+    margin: 0 auto 10px auto; padding:10px; text-align:left; background:#FFF;
+}
+#mainpanel {width:100%; margin:auto; margin-bottom:0; margin-top:-10px; background:#bad0ff; text-align:center; 
+}
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+header {padding-top:0; width:100%; height:156px; margin:0 auto 0 auto; 
+background-image:url('images/bluepan.jpg'); background-repeat:no-repeat; background-position:-20px left; 
+}
+/*header {padding:0;  width:100%; height:156px;  margin:0 auto 0 auto;}*/
+#red {position:absolute; right: 15px; top:14px; background-image:url('images/red-square.png'); width:160px; height:160px; z-index:3;
+}
+#yellow { position:absolute; right: 120px; top:44px; background-image:url('images/yellow-square.png'); width:123px; height:125px; z-index:2;
+}
+#white {position:absolute; right: 200px; top:61px; background-image:url('images/white-square.png'); width:105px; height:109px; z-index:1
+} 
+nav {float:left; width:140px; margin-left:0; margin-top:20px; background:#bad0ff; }
+#midpanel{margin-left:160px; margin-right:5px; margin-top:0; padding:0 10px 10px 0; background:#bad0ff;  color:navy;}
+#midleft { width:45%; float:left; background:#bad0ff; }
+#midleft li { text-align:left; margin:0 0 10px 10px; width:330px; list-style-type:disc;
+}
+#midright {	float:right; width:350px; text-align:left; background:#bad0ff; 
+  }
+footer { clear:both; width:99%; background:#bad0ff; padding:5px; margin-top:10px; text-align:center; font-size:small}
+/*SET THE SIDE MENU HYPERLINK STYLE*/
+/* set vertical button menu position */
+nav ul	{ float:left; width:130px; margin-left:10px; padding-left:0;  list-style-type :none; }
+/* set general side button styles */
+nav li { width:115px; line-height:20px; margin-bottom: 3px; text-align: center; }
+/* set general anchor styles */
+nav li a	{ display: block; width:115px; color: white;  font-family:arial; font-size: small; font-weight:bold; text-decoration: none }
+/* specify state styles */
+/* mouseout (default) */
+nav li a { background: #1A9CE0;  border: 4px outset #AABAFF;}
+/* mouseover */
+nav li a:hover	{ display:block; background: #0A4ADF; border: 4px outset #8ABAFF; width:115px;}
+/* onmousedown */
+nav li a:active { background:#AECBFF; border: 4px inset #AECBFF; }
+br.clear { clear:both
+}
+.lft { text-align:left;
+}
+.cntr { text-align:center;
+}
+footer a:link {color: navy; text-decoration:none; font-size:small;}
+footer a:visited {color: navy; text-decoration: none; }
+footer a:active {color: navy; text-decoration: none; }
+footer a:hover {color: red;text-decoration: none; }

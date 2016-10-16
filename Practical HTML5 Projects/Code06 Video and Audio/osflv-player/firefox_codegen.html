@@ -1,0 +1,120 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+	<head>
+    	<style type="text/css">
+			#page { width:100%; min-width:800px; text-align:center; font-family:Arial, Helvetica, sans-serif; }
+			#container { width:800px; margin-left:auto; margin-right:auto; min-width:800px;}
+			#content { width:350px; float:left;}
+			#contentright { width:300px; float:right; border:2px #ffffff dashed; background-color:#a4e7ff; padding:10px;}
+			
+			.gencode { border:2px solid #a4e7ff; padding:4px; background-color:#eeeeee; }
+			
+			.row {
+				margin:10px 30px 10px 0px;
+			}
+			
+			.inputText {
+				border:1px solid #bbbbbb;
+				height:24px;
+				padding:2px;
+			}
+			
+			label {
+				font-size:14px;
+				color:#666666;
+			}
+		</style>
+            
+    	<title>FLV Player Code Generator</title>
+   		
+    </head>
+    
+
+	<script language='javascript'>
+        function generateCode(params){
+            var flashVars = new Array();
+            
+            for(t=0; params[t]; t++)
+                if(document.getElementById(params[t]).value == 'on'){
+                    if(document.getElementById(params[t]).checked)
+                        flashVars.push(params[t]+'='+document.getElementById(params[t]).value);
+                } else {
+                    if(params[t] == 'width' || params[t] == 'height'){
+                        if(params[t] == 'width') width = document.getElementById(params[t]).value;
+                        if(params[t] == 'height') height = document.getElementById(params[t]).value;
+                    }
+                    else
+                        flashVars.push(params[t]+'='+document.getElementById(params[t]).value);
+                }
+
+            flashVars = flashVars.join('&');
+            
+            if(!width) width=400;
+            if(!height)
+			{
+				height = parseInt(300) + 25;
+			}
+			else
+			{
+				height = parseInt(height) + 25;
+			}
+            
+            var code = "<"+"script src='AC_RunActiveContent.js' language='javascript'></"+"script>\n";
+            code += "<!-- saved from url=(0013)about:internet -->\n";
+            code += "<"+"script language='javascript'>\n";
+            code += " AC_FL_RunContent('codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0', 'width', '"+width+"', 'height', '"+height+"', 'src', ((!DetectFlashVer(9, 0, 0) && DetectFlashVer(8, 0, 0)) ? 'OSplayer' : 'OSplayer'), 'pluginspage', 'http://www.macromedia.com/go/getflashplayer', 'id', 'flvPlayer', 'allowFullScreen', 'true', 'movie', ((!DetectFlashVer(9, 0, 0) && DetectFlashVer(8, 0, 0)) ? 'OSplayer' : 'OSplayer'), 'FlashVars', '"+flashVars+"');\n";
+            code += "</"+"script>\n";
+            code += "<"+"noscript>\n";
+            code += " <object width='"+width+"' height='"+height+"' id='flvPlayer'>\n";
+            code += "  <param name='allowFullScreen' value='true'>\n";
+            code += "  <param name='movie' value='OSplayer.swf?"+flashVars+"'>\n";
+            code += "  <embed src='OSplayer.swf?"+flashVars+"' width='"+width+"' height='"+height+"' allowFullScreen='true' type='application/x-shockwave-flash'>\n";
+            code += " </object>\n";
+            code += "</noscript>\n";
+            
+            document.getElementById('out').innerHTML = "<textarea class='gencode'  style='width: 100%; height: 320px;'>"+code+"</textarea>";
+        }
+    </script>
+    
+        <body>
+        	<div id="page" align="center"><div id="container">
+                
+                <div id="content" align='left'>
+                    <div align='right' class="row"><label>Movie File Path</label> <input id='movie' value="movieurl" style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Width </label><input id='width' style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Height </label><input id='height' style='width: 150px' type='text' class='inputText'></div>
+                   	<div align='right' class="row"><label>Accent Color</label> <input value='0x20b3f7' id='accentcolor' style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Button Color</label> <input value='0x333333' id='btncolor' style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Text Color</label> <input value='0xffffff' id='txtcolor' style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Volume (0-100)</label> <input id='volume' style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Preview Image</label> <input id='previewimage' value="previewimageurl" style='width: 150px' type='text' class='inputText'></div>
+                    <div align='right' class="row"><label>Autoplay</label> <input id='autoplay' style='margin-left: 10px' type='checkbox'></div>
+                    <div align='right' class="row"><label>Autoload</label><input id='autoload' style='margin-left: 10px' type='checkbox' checked=checked'></div>
+                    <div align='right' class="row"><label>Mute</label> <input id='mute' style='margin-left: 10px' type='checkbox'></div>
+                    <div align='center' style='margin: 30px 0px 50px; width: 300px;'><input type='button' onClick="generateCode(new Array('movie', 'width', 'height', 'btncolor', 'accentcolor', 'txtcolor', 'volume', 'previewimage', 'autoplay', 'autoload', 'mute'))" value='Generate Code'></div>
+                    
+                </div>
+                <div id="contentright" align="left">
+                	<table align="left" cellpadding="0" cellspacing="0">
+                    	<tr>
+                        	<td align="center" style="font-size:16px; font-weight:bold; color:#333333;">OS FLV Code Generator</td>
+                       	</tr>
+                        <tr>
+                   			<td style="padding:5px; font-size:12px;">
+                            	Enter the value you want for each field then click Generate Code. Paste the code into your html or php code.
+                                <br><br>
+                                The Movie File Path must be relative to the player files. Example: videos/myclip.flv
+                                <br><br>
+                                Width and Height should be the size of your video itself. The control bar height will be automatically added to the video height.
+                                <br><br>
+                                The Accent Color will appear on the progress bar as well as the volume panel.
+                                <br><br>
+                                Preview Image is an image file that will be loaded and shown on your player until user clicks the play button. Preview Image is optional,  if you still want the player to be click-to-play and don't supply a Preview Image, the screen will be dimmed behind the play button. The Preview Image may be a relative path or a link.
+                            </td>
+                      	</tr>
+                  	</table>
+                </div>
+                <div id='out' style='height: 400px' align='left'></div>
+         	</div></div>
+	</body>
+</html>

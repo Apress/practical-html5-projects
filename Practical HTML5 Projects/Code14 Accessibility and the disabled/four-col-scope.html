@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Four column table using scope</title>
+<style type="text/css">
+table { width: 330px; border:1px black solid; border-collapse:collapse; 
+font-family: "times new roman"; 
+}
+td { padding:0 5px 0 5px; border:1px black solid; 
+}
+th { text-align:left; padding:0 5px 0 5px; border:1px black solid; 
+}
+caption { font-weight:bold;
+}
+</style>
+</head>
+<body>
+<table summary="Linking cells to headers using scope">
+<caption>Local tradesmen</caption>
+<tr>
+<th></th><!--empty cell-->
+<th scope="col">Plumber</th>
+<th scope="col">Electrician</th>
+<th scope="col">Carpenter</th>
+</tr>
+<tr> 
+<th scope="row" class="left">HandyAndy</th>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<th scope="row" class="left">BoilerMan</th>
+<td>Yes</td> 
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<th scope="row" class="left">Chippendale</th>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</table>
+</body>
+</html>

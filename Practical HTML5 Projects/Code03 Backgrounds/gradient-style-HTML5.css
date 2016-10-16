@@ -1,0 +1,8 @@
+body { background:#FFF url(images/green-grad.jpg) repeat-x; 
+}
+body { margin:auto;
+}
+header, nav, footer, article { display:block;
+}
+header {width:920px; height:160px; border:10px solid white ; margin:20px auto;
+}

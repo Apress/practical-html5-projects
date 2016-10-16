@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>A PayPal payment page</title>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="pay-cards.css">
+<!--conditional Javascript added-->
+<!--[if lte IE 8]>
+<script src="html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+<a id="top"></a>
+  <h1>A PayPal Example</h1>
+<!--side menu column starts-->
+<nav><!--menu starts-->
+<ul> 
+     <li><a href="cards.html" title="Greetings Cards">Cards</a></li>
+     <li><a href="products.html" title="Products">Products</a></li>
+     <li><a href="about.html" title="About Us">About Us</a></li>
+     <li><a href="index.html" title="Return to Home Page">Home Page</a></li>
+</ul>
+</nav>
+<!--end of side menu column. Start of right column-->
+<div id="rightcol">
+  <p class="cntr"><br>
+  <img alt="" src="images/valid-html401.png" width="88" height="31"><br>
+      <span class="tiny">Validated by the<br>World Wide Web<br>Consortium</span>
+  </p>
+  
+	<p class="cntr redarrow">
+    <a  href="#top">
+  <img  title="Go to top of page" src="images/upred.gif" alt="Go to top of page" 
+      width="33" height="30"></a><br><strong>Go to top of page</strong></p>
+	
+</div>
+<!--end of right column and start of boxes-->
+<div class="box">
+	
+   <h2 class="cntr">Pay by PayPal OR Credit/Debit Card</h2>
+	
+	<img src="images/debitcards.gif" alt="Cards" title="Cards" width="149" height="16"><br>
+		<h2>Price includes envelopes</h2>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd0" value="_s-xclick">
+<input type="hidden" name="encrypted0" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_viewcart_LG.gif" name="submit0" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+	<br>Click <b>View Cart</b> to correct mistakes, alter quantities, continue 
+	shopping, go to checkout</form>
+</div>
+<div class="box">
+<strong>
+	<img title="Beach" alt="Beach" height="95" src="images/beach2thumb.jpg" style="float: left; margin-left: 5px; margin-right: 5px" width="77">Pack 
+	of 5 cards for &pound;4.50 (free UK delivery)</strong><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="10350939">
+<p>
+<input type="hidden" name="on0" value="Delivery Destination">
+</p>
+<p class="lft">Select delivery destination</p>
+						<p><select name="os0">
+	<option value="UK">UK &pound;4.50</option>
+	<option value="Europe">Europe &pound;6.20</option>
+	<option value="Outside Europe">Outside Europe &pound;7.20</option>
+</select>&nbsp; inclusive price per pack of five cards</p>
+<input type="hidden" name="currency_code" value="GBP">
+<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+<div class="box">
+<b>
+	<img title="Sir Patrick Moore's cat" alt="Sir Patrick Moore's cat" height="91" src="images/catthumb.jpg" style="float: left; margin-left: 5px; margin-right: 5px" width="69">Pack 
+	of 5 cards for &pound;4.50 (free UK delivery)</b><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="10350961">
+<p>
+<input type="hidden" name="on0" value="Delivery Destination">
+</p>
+<p class="lft">Select delivery destination</p><p><select name="os0">
+	<option value="UK">UK &pound;4.50</option>
+	<option value="Europe">Europe &pound;6.20</option>
+	<option value="Outside Europe">Outside Europe &pound;7.20</option>
+</select>&nbsp; inclusive price per pack of five cards</p>
+<input type="hidden" name="currency_code" value="GBP">
+<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+<div class="box-bottom">
+<strong>
+	<img title="Ferns and Flowers" alt="Ferns and Flowers" height="103" src="images/fernsthumb.jpg" style="float: left; margin-left: 5px; margin-right: 5px" width="73">Pack 
+	of 5 cards for &pound;4.50 (free UK delivery)</strong> <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="10351323">
+<p class="lft"><input type="hidden" name="on0" value="Delivery Destination">
+</p>
+<p class="lft">Select delivery destination
+</p>
+						<p><select name="os0">
+	<option value="UK">UK &pound;4.50</option>
+	<option value="Europe">Europe &pound;6.20</option>
+	<option value="Outside Europe">Outside Europe &pound;7.20</option>
+</select>&nbsp; inclusive price per pack of five cards</p>
+<input type="hidden" name="currency_code" value="GBP">
+<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online.">
+<img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div></div>
+
+<footer>
+    <p class="cntr">Footer goes here</p></footer>
+
+</body>
+</html>

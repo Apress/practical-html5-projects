@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Four column table with id, th and headers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+table { width: 500px; border:1px black solid; border-collapse:collapse;font-family: "times new roman";
+	font-size: medium;
+}
+td { border:1px black solid; 	
+}
+th { border:1px black solid;
+}
+caption { font-weight:bold; font-size: medium;
+}
+</style>
+</head>
+<body>
+<table summary="Table 4. Linked headers and data cells">
+<caption>
+    Table 4. Linked headers and data cells</caption>
+<tr>
+          <th id="th1">Destination</th>
+          <th id="th2">Coach</th>
+          <th id="th3">Boat</th>
+          <th id="th4">Air</th>
+</tr>        
+<tr>
+   <td headers="th1">To Lisbon</td>
+   <td headers="th2">No</td>
+   <td headers="th3">Yes</td>
+   <td headers="th4">Yes</td>
+</tr>
+<tr>
+   <td headers="th1">To Isle of Wight</td>
+   <td headers="th2">Yes</td>
+   <td headers="th3">Yes</td>
+   <td headers="th4">No</td>
+</tr>
+</table>
+</body>
+</html>

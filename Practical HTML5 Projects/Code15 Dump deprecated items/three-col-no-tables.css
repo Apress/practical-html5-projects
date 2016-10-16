@@ -1,0 +1,25 @@
+﻿/*SET PAGES HORIZONTALLY CENTRAL ON SCREEN, FILL THE SCREEN WITH A BACKGROUND COLOUR*/
+body {background:white; font-family:arial; font-size:medium; color:black; margin:auto; padding:7px; 
+}
+/*THIS CONTAINER IS 960px WIDE AND SURROUNDS THE CONTENT WITH A BORDER*/
+#container { width:960px; border:1px black solid; margin:auto; text-align:center; margin-top:0; background:#a5f400;
+}
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+#hdr {width:920px;  height:20px; margin:15px auto 15px auto; background:yellow; color:black; border:1px black solid;
+}	
+/*THE MAIN PANEL CONTAINS THE THREE COLUMNS*/
+#mainpanel {margin:auto; background:#d2ff81; text-align:center; width:920px; height:140px; border:1px black solid;
+}
+/* FAR LEFT COLUMN AND FAR RIGHT COLUMN. DISPLAY INLINE ITEM REMOVES IE6 DOUBLE MARGIN BUG*/
+#leftcol {float:left; width :115px;
+	height: 140px; border-right:1px black solid;
+}
+#rightcol { float:right; width:92px; border-left:1px black solid; height:140px;
+}
+*SET MARGINS FOR MID COLUMN. THIS SITS BETWEEN THE  FAR LEFT AND FAR RIGHT COLUMNS*/
+#midcol { margin-left:120px; margin-right:105px; text-align:center; border:1px black solid;
+}
+/*SET CENTERED FOOTER TO CLEAR PRECEDING COLUMNS*/
+#ftr {width:920px; margin:auto; text-align:center; clear:both; background: #a5f400; border: 1px black solid;
+ 
+}

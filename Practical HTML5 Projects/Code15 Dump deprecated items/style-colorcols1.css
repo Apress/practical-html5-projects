@@ -1,0 +1,35 @@
+﻿/*style-colourcols1.CSS*/
+/*SETTINGS FOR MAXIMUM COMPATIBILTY BETWEEN BROWSERS*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0; margin: 0;  font-size: 100%;  font-weight: normal; }
+img { border:0; }
+
+/*SET PAGES HORIZONTALLY CENTRAL ON SCREEN*/
+/*THE BODY FILLS THE SCREEN WITH A BACKGROUND COLOUR AND SETS THE GENERAL TEXT FORMAT*/
+body {background:#BBD999; font-family:arial; font-size:120%; color:#4B6113; margin:auto; padding:7px;}
+/*THE CONTAINER IS 900px WIDE AND SURROUNDS THE CONTENT WITH A WHITE BORDER*/
+#container { width:900px; border: 10px white solid; margin:auto; text-align:center; margin-top:0; background-color:#CEE1BA; color:#4B6113; }
+             
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+#hdr {padding-top:18px; height:141px; width:100%; 
+ margin:auto; background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-position:65; }	
+/*FORMAT ANY TEXT THAT IS PLACED IN THE HEADER*/ 
+#hdr h1 {font-family: "times new roman"; text-align:center; color: white; font-weight:bold; font-size: 300%; margin-top:50px;}
+
+/* FAR LEFT COLUMN AND FAR RIGHT COLUMN. THE DISPLAY INLINE ITEM REMOVES THE IE6 DOUBLE MARGIN BUG*/
+#leftcol {float:left; width :130px; display:inline; background-color:#ACC;}
+#rightcol { float:right; width:92px; text-align:center; background:url(images/yellow-square.gif) repeat-y right top; }
+
+/*SET MARGINS ON MID COLUMN*/
+#midcol { margin-left:140px; margin-right:105px; text-align:center; }
+	
+/*SET COLUMN WIDTHS FOR CONTENT. THESE SIT WITHIN THE MIDCOL*/
+#mid-left-col {width:47%; float:left; text-align:left;}
+#mid-right-col {width:47%; float:right; text-align:left;}
+
+/*CODE WHICH ENSURES THAT DIVS AUTOMATICALLY STRETCH VERTICALLY TO ACCOMMODATE VARIOUS AMOUNTS OF CONTENT */
+br.clear {	clear:both; }
+
+/*SET FOOTER TO CLEAR PRECEDING COLUMNS*/
+#ftr {text-align:center; clear:both; }
+

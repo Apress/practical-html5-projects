@@ -1,0 +1,30 @@
+#container { width:780px; margin:auto; 
+}
+#content { width:640px; margin-left:140px;
+}
+header, nav, footer, article, section { display:block; 
+}
+header { width:780px; background-color:#FF9966; text-align:center; margin:5px auto 10px auto; padding:2px;
+}
+article { float:left; width:190px; margin:0 0 0 10px; padding:6px;
+}
+footer { clear:both; background-color:#FF9966; text-align:center; width:780px; margin:auto;
+}
+p { margin-top:5px; margin-bottom:5px; 
+}
+/* set navigation menu position and style*/
+nav { float:left; width:130px; background-color : white; margin: 0 7px 5px -30px; 
+}
+nav ul {float:left; width:130px;} 
+/* set general side button styles */
+nav li { margin-bottom: 3px; text-align: center; list-style-type:none; width:125px;}
+/* set general anchor styles */
+nav li a	{ display: block; color: white; font-weight: bold; text-decoration: none }
+/* specify state styles... */
+/* mouseout (default) */
+nav li a { background:#946055; color: white; border: 5px outset #C96E6B;}
+/* mouseover */
+nav li a:hover	{ background: #9F7562;   border: 5px outset #C96E6B;}
+/* omousedown */
+nav li a:active { background:maroon;  border: 5px inset maroon }
+}

@@ -1,0 +1,21 @@
+/*PRINT.CSS: re-set style for printing only*/
+/*re-set basic styles to avoid browser compatibility quirks*/
+html, h1, h2, h3, h4, h5, p { padding:0; margin:0; font-size:100%; font-weight:normal; 
+}
+/*TO SAVE INK, set the text to black with white background*/
+body { width:100%; padding:0; margin:0; float:none; color:black; background-color:white;
+}
+/*TO SAVE PAPER, remove the large line space beneath a heading. Set headings to 14 point*/
+h1, h2, h3, h4, h5, h6 { margin-top:0; margin-bottom:0; font-weight:bold; font-size:14pt; !important 
+}
+/*SELECT ITEMS THAT YOU DO NOT WANT TO PRINT, e.g., header, menu, print-this-page button, and footer*/
+#hdr, #hmenu, #button, #ftr, .uparrow { display:none; 
+}
+/*REVEAL OUTGOING URL links on printed page*/
+a[href^="http://":after {content: "(" attr(href)")"; 
+}
+/*SET PAGE BREAK class so that the printed pages do not break in undesirable places*/
+.break-before { page-break-before: always; 
+}
+.break-after { page-break-after:always; 
+}

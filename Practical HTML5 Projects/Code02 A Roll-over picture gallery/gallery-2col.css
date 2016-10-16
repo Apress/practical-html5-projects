@@ -1,0 +1,32 @@
+﻿/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;} /*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; } /*remove bullets from the list elements*/
+img	{ border: 0; } /*set images to have no borders*/ 
+
+/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px;
+	position: absolute; top: 10px; left: 250px;
+	visibility: hidden;
+	}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:85px; }
+li	{ margin: 5px; list-style-type:none;	}
+img	{ border: 0 }
+
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid {
+	width: 260px; height:390px;
+	position: absolute; top: 10px; left: 165px; margin-left:0;
+	visibility: hidden;
+	}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }

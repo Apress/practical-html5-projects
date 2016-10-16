@@ -1,0 +1,53 @@
+﻿/*set attributes for consistent appearance in all browsers*/
+p, ul, li, h1, h2 {	margin:0; padding:0;
+}
+img { border:0;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+/*A container width that prevents float drop*/
+/*#container {min-width:960px; font-family:"times new roman"; font-size:medium; color:black; margin:auto; max-width:1050px;
+}*/
+/* A container width that causes float drop*/
+#container {min-width:850px; font-family:"times new roman"; font-size:medium; color:black; margin:auto; max-width:1000px;
+}
+header {width:100%; margin:auto; height:60px; text-align:center;
+}
+#midcol-portraits {margin-left:165px; margin-right:15px;
+}
+figure { float:left; margin-right:5px; display:inline;
+}
+figure p { font-size:80%; 	height: 15px; margin:0 auto 0 auto; text-align:center; width:200px;
+}
+#gallery img { margin-right:20px; margin-top:5px;
+}
+aside { float:left; width:260px;
+}
+footer {clear:both; text-align:center;
+}
+/* set side menu position */
+nav {float:left; margin-left:0; width :135px; padding:0; zoom:1;
+}
+/* set general side button styles */
+nav ul li{ margin-bottom: 4px; text-align: center; list-style:none;  
+}
+/* set general anchor styles */
+nav ul li a { color: white; background:#D20B0D; font-weight: bold; text-decoration: none 
+}
+/* specify state styles. */
+/* mouseout (default) */
+nav li a { background: #D20B0D;  border: 4px outset #FFAAAA; display:block; 
+}
+/* mouseover */
+nav li a:hover	{ background: maroon;   border: 4px outset maroon;
+}
+/* onmousedown */
+nav li a:active { background:#AECBFF;  border: 4px inset #AECBFF; 
+}
+h1 {font-size:300%; font-weight:bold; color:#D20B0D; margin-top:0; margin-bottom:0; font-family:"Calligraph421 BT"; font-style:italic; text-align:center;
+}
+span.swac {font-size:x-large; font-weight:bold; color:#D20B0D; font-family:"Calligraph421 BT"; font-style:italic; text-align:center;
+}
+h3,h4 {	margin-top:0; margin-bottom:0;}
+h2 {font-size:x-large; font-weight:bold; margin-top:0; margin-bottom:0;} 

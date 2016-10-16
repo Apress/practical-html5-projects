@@ -1,0 +1,47 @@
+﻿/*This css template is derived from a template created by
+Andy Budd (www.andybudd.com) for the book
+"Blog Design Solutions", and is released under a Creative Commons
+Attribution-NonCommercial-ShareAlike 2.5 License*/
+body { 	margin: 0; padding: 0; text-align: center; height:100%; background: #e6e6e6; font: 76%/1.6 "Lucida Grande", Geneva, Verdana, sans-serif;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+#wrapper{ margin: 0 auto -20px auto; padding: 0 10px; width: 720px; clear:both; 
+}
+/*apply side drop shadows*/
+#wrapper { background: url(images/middle.png) repeat-y;
+}
+header { width: 700px; height: 154px; margin: 0; margin-left:10px; background: url(images/bluepan.jpg); border-top:10px white solid;
+}
+#leftcol { margin: 0 10px; display:inline; /* fix IE double margin float bug */
+			float: left; width: 500px; text-align:left;
+}
+#mainContent {margin:0; width: 700px; float: left; background-color:#aac9f6; border:10px white solid; min-height:425px;
+}
+nav { width: 140px; margin-right:10px; padding: 0 5px 5px 0; float: right; 
+}
+footer { margin:0; text-align:center; clear: both; background-color:#aac9f6;
+}
+br.clear { clear:both;
+}
+a { font-weight: bold; color: navy; text-decoration: none; border-bottom: 1px solid navy;
+}
+a:hover {color:#906; border-bottom: 1px solid #906;
+}
+header h1 { color: #fff; padding: 50px 0 0 20px; margin: 0; font-size: 2.6em;
+			text-shadow: 0.1em 0.1em 0.2em black;
+}
+h2, h3, h4 { margin-top: 0; color: navy; font-weight: bold;
+}
+h2 { font-size: 2.2em; margin-bottom:0;
+}
+h3, nav h2 { font-size: 1.6em; margin-bottom:0;
+}
+p { margin-top:0; margin-bottom:6px;
+}
+#mainContent p, #mainContent h2, #mainContent h3, #mainContent h4, #mainContent ul, #mainContent ol {
+	margin-left: 10px; margin-right: 10px
+}
+nav ul li { list-style: none; margin:0; padding: 0;
+}

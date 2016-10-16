@@ -1,0 +1,9 @@
+﻿/*drop down menu style menu.css*/
+#bar {position:absolute; left:380px; top :250px; color:black; margin:auto; 
+width:200px; height:20px; background-color:#ffc0cb; font-family:verdana; 
+font-size:small; border:black 2px solid; }
+.menu {position:absolute; top:271px; color:black; width:60px; height:50px; 
+background-color:#ffc0cb; font-family:verdana; font-size:small; border:black 2px solid; visibility:hidden; }
+#hdr {
+	text-align:center;
+}

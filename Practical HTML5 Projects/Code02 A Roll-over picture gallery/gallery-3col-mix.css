@@ -1,0 +1,47 @@
+﻿/*set images to have no borders*/
+img { border:none;
+}
+/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; width:85px;} /*place the column on the page*/
+li	{ margin: 5px; list-style-type:none; } /*remove bullets from the list elements*/
+/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 250px; height:340px;
+	position: absolute; top: 10px; left: 400px;
+	visibility: hidden;
+	}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+/* set 2nd column of thumbnails 85px further over to right*/
+#col-2	{ position: absolute; top: 0; left: 85px; width:135px; }
+li	{ margin: 5px; list-style-type:none;	}
+/* MouseOut state (default) - hide larger picture */
+#col-2 a img.hid {
+	width: 350px; height:265px;
+	position: absolute; top: 10px; left: 315px; margin-left:0;
+	visibility: hidden;
+	}
+/* MouseOver state (hover)- reveal larger picture */
+#col-2 a:hover { background: white; }
+#col-2 a:hover img.hid { visibility:visible; }
+
+/*----------------------------------------------------*/
+
+
+/* set 3rd column of thumbnails 170px further over to right*/
+#col-3	{ position: absolute; top: 0; left: 230px; width:108px; }
+li	{ margin: 5px; list-style-type:none;	}
+/* MouseOut state (default) - hide larger picture */
+#col-3 a img.hid {
+	width: 260px; height:260px;
+	position: absolute; top: 10px; left: 175px; margin-left:0;
+	visibility: hidden;
+	}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-3 a:hover { background: white; }
+#col-3 a:hover img.hid { visibility:visible; }

@@ -1,0 +1,20 @@
+﻿body {
+	background-color:#CCFFCC; font:black arial medium;
+}
+.top-right-corner {
+	background:url('images/top-rightcorner.png') no-repeat right top;
+	width: 326px;
+}
+.bottom-left-corner {
+	background:url('images/bottom-leftcorner.png') no-repeat left bottom;
+	padding-top:8px;
+	padding-left:8px;
+}
+.shadowbox {
+	background:url('images/main-shadow.png') right bottom;
+}
+.innerbox {
+	position: relative;
+	left:-8px;
+	top:-4px;
+}

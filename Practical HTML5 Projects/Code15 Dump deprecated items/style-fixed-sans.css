@@ -1,0 +1,90 @@
+﻿/*style-fixed-sans.CSS*/
+/*SET EVERYTHING FOR MAXIMUM COMPATIBILTY BETWEEN BROWSERS*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0; margin: 0;  font-size: 100%;  font-weight: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+img { border:0; }
+
+/*SET PAGES HORIZONTALLY CENTRAL ON SCREEN*/
+#wrapper {	width:100%; margin:auto;  margin-top:0;}
+/*THE BODY FILLS THE SCREEN WITH A BACKGROUND COLOUR AND SETS THE GENERAL TEXT FORMAT*/
+body {background:#BBD999; font-family:arial; font-size:small; color:#4B6113;  
+margin:auto; padding:7px; }
+
+/*THE CONTAINER IS 960px WIDE AND SURROUNDS THE CONTENT WITH A WHITE BORDER*/
+#container { width:960px; border: 10px white solid; margin:auto; text-align:center; margin-top:0; }
+/*HEADER/BANNER FILLS THE CONTAINER'S WIDTH*/ 
+#hdr {padding-top:18px; height:141px; width:100%; 
+ margin:auto; background-image:url('images/banner.jpg'); background-repeat:no-repeat; background-position:65; }	
+/*FORMAT ANY TEXT THAT IS PLACED IN THE HEADER*/ 
+#hdr h1 {font-family: "times new roman"; text-align:center; color: white; font-weight:bold; font-size: xx-large; margin-top:50px;}
+/*THE MAIN PANEL CONTAINS THE MENUS, PICTURES AND TEXT OF THE PAGE*/
+#mainpanel {margin:auto; background-color:#CEE1BA; text-align:center;}
+/* LEFT SIDE MENU COLUMN AND RIGHT COLUMN. THE DISPLAY INLINE ITEM REMOVES THE IE6 DOUBLE MARGIN BUG*/
+#leftcol {float:left; margin-left:15px; width :100px; display:inline;}
+#rightcol { float:right; width:92px; text-align:center;}
+/*SET GENERAL STYLE FOR HORIZONTAL BUTTON MENU */
+ul#hmenew {top:0px; width:632px; 
+height:40px; margin:auto; list-style-type:none; }
+li.hbtnew {display:block; margin-left:4px; float:left; text-align:center; padding:5px; width:180px;}
+/*SET GENERAL ANCHOR STYLE TO FILL BUTTON CONTAINERS*/
+li.hbtnew a {display:block; text-decoration:none; color:white; font-weight:bold; width:180; padding:5px;}
+/*MOUSEOUT STATE (DEFAULT)*/
+li.hbtnew a { background: #759885;  border: 4px outset #a2d0a2;}
+/*SET MOUSEOVER*/
+li.hbtnew a:hover	{ background:olive; border: 4px outset #a2d0a2; }
+/* SET MOUSEDOWN*/
+li.hbtnew a:active 	{ background:olive;  border: 4px inset #a2d0a2; }
+
+/* SET SIDE MENU BUTTON POSITION, WIDTH AND STYLE*/
+ul#menu	{list-style-type:none;
+	 
+}
+li#menu	{ width: 98px; float:left; margin-right: 0px; }
+/* SET GENERAL SIDE BUTTON STYLES*/
+li.btn { margin-bottom: 3px; padding:3px0 0 3px; text-align: left;  }
+/* SET GENERAL ANCHOR STYLES*/
+li.btn a	{ display: block; color: #536B22; font-weight: bold; font-size:85%; text-decoration: none; }
+/*MOUSEOUT (DEFAULT)*/
+li.btn a { background: #CEE1BA; border-top:1px solid silver; }
+/*SET UNDERLINE ON BOTTOM BUTTON*/ 
+li.btn2 a {display:block; padding-bottom:3px; font-size:85%; background: #CEE1BA; border-top:1px solid silver; border-bottom:1px solid silver; color: #536B22; font-weight: bold; text-decoration: none; text-align:left;}
+/*BOTTOM BUTTON MOUSEOVER*/
+li.btn2 a:hover	{ background: #BBD999;}
+/*BOTTOM BUTTON MOUSEDOWN*/
+li.btn2 a:active { background:#BBD999; }
+/*GENERAL BUTTON MOUSEOVER*/
+li.btn a:hover	{ background: #BBD999;}
+/*GENERAL BUTTON MOUSEDOWN*/
+li.btn a:active { background:#BBD999; }
+/*REMOVE AUTOMATIC TOP AND BOTTOM MARGINS ON HEADINGS*/
+h1, h2, h3, h4 {	margin-top:0; margin-bottom:0;}
+/*SET MARGINS ON LIQUID MID COLUMN*/
+#midcol { margin-left:120px; margin-right:105px; text-align:center; }
+/*SET FOOTER TO CLEAR PRECEDING COLUMNS*/
+#ftr {text-align:center; clear:both; }
+	
+/*SET COLUMN WIDTHS FOR CONTENT THESE SIT WITHIN THE MIDCOL-HOME CONTAINER*/
+#mid-left-col {width:47%; float:left; text-align:left;}
+#mid-right-col {width:47%; float:right; text-align:left;}
+
+/*CODE WHICH ENSURES THAT DIVS AUTOMATICALLY STRETCH VERTICALLY TO ACCOMMODATE VARIOUS AMOUNTS OF CONTENT */
+br.clear {	clear:both; }
+
+/*SET VARIOUS PARAGRAPH STYLES*/
+
+#midcol h2 { font-size:large; font-weight:bold; text-align:center; }
+p.lft {text-align:left;}
+p.cntr {text-align:center; }
+.tiny { font-size:70%;}
+p.uparrow {margin-top:300px; }
+
+/*SET ALTERNATIVE HYPERLINK STYLE FOR FOOTER*/
+a.other10normal:link {color: green; text-decoration:none; font-weight:normal; font-size:x-small;}
+a.other10normal:visited {color: green; text-decoration: none; font-weight:normal; font-size:x-small;}
+a.other10normal:active {color: green; text-decoration: none; font-weight:normal; font-size:x-small;}
+a.other10normal:hover {color: red;text-decoration: none; font-weight:normal; font-size:x-small;}

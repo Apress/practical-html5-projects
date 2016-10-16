@@ -1,0 +1,30 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li { padding: 0; margin: 0; 
+}
+header, footer, section, article, nav { display:block; 
+}
+#container { margin-left:20px; margin-top:20px;
+}
+nav { width:140px;
+}
+nav ul { width: 115px; float:left;margin-left:0; 
+}
+nav li { margin-bottom: 1px; text-align: center; list-style:none; padding-bottom:3px;
+}
+nav li a { display: block; color: yellow; font-weight: bold;
+text-decoration: none; zoom:1; 
+}
+/* mouseout (default) */
+nav li a { background: #946055;  border: 4px outset #c96e6b;
+}
+nav li a:hover { background: #9f7562; color:white;  border: 4px outset #c96e6b;
+}
+nav li a:active { background:#aecbff;  border: 4px inset #aecbff; 
+}
+/* set general inset button styles */
+nav li.insetbtn { border:none;
+}
+nav li.insetbtn a { display: block; color:orange; font-weight: bold;
+text-decoration: none; cursor:default; margin-bottom: 0; text-align: center; list-style:none;
+padding-bottom:3px; background:#744035; border-top: 4px #5e2100 solid;
+border-left: 4px #5e2100 solid; border-right:3px #bfa5a2 solid; border-bottom:3px #bfa5a2 solid;
+}

@@ -1,0 +1,14 @@
+﻿/* Set general thumbnail styles */
+#col-1	{ position: absolute; top: 0; left: 0; } /*place the column on the page*/
+li	{ margin: 10px; list-style-type:none; } /*remove bullets from the list elements*/
+img	{ border: none; } /*set images to have no borders*/ 
+
+/* MouseOut state (default) - create and position a space for the larger images and hide them*/
+#col-1 a img.hid { width: 260px; height:390px;
+	position: absolute; top: 10px; left: 140px;
+	visibility: hidden;
+	}
+
+/* MouseOver state (hover)- reveal larger picture */
+#col-1 a:hover { background: white; }
+#col-1 a:hover img.hid { visibility:visible; }

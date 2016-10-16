@@ -1,0 +1,11 @@
+body { background:#FFF url(images/green-grad.jpg) repeat-x; margin:auto;
+}
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+header {width:95%; max-width:1024px; min-width:900px; height:180px; padding:0;
+border:10px white solid;  background:url(images/header3.jpg); margin:20px auto; 
+}
+h1 { font-size:300%; color :white; position: absolute; left:15%; top: 75px; width: 480px; 
+}
+#rosette { position:relative; left:85%; top:120px; }

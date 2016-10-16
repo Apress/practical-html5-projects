@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>Test page for semantic tags</title>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="HTML5-style-2.css">
+<!--conditional Javascript added-->
+<!--[if lte IE 8]>
+<script src="html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<!--<div id="container">--><!--surround header and border with a container-->
+<header><!--change <div id="hdr"> to <header>-->
+  <h1>Devon's Rural Retreats</h1>
+</header>
+<!--</div>--><!--close top section - content area starts -->
+<div id="content">
+   <h2>Award winning accommodation, self catering or bed and breakfast</h2>
+<div id="leftcol">
+<h3>Cottages, converted barns, caravans</h3><img alt="Cottage interior" title="Cottage interior"
+height="225" src="images/cotdining300.jpg" width="300"><br>The superb interior 
+of one of our cottages
+</div>
+<nav><!--use the semantic tag <nav>-->
+<ul><!--start of menu list-->
+ <li class="btn"> <a href="accommodation.html" title="Accommodation">Accommodation</a>
+</li>
+<li class="btn"><a href="maps.html" title="Location Maps">Maps</a>
+</li>
+<li class="btn"><a href="faqs.html" title="Frequently Asked Questions">Information</a>
+</li>
+<li class="btn"><a href="attractions.html" title="Local attractions">Attractions</a>
+</li>
+<li class="btn"><a href="contact.html" title="Contact us">Contact Us</a>
+</li>
+<li class="btn"><a href="index.html" title="Return to Home Page">Home Page</a>
+</li>
+</ul><!--end of menu list-->
+</nav><!--remove </div> and replace with </nav>-->
+<div id="midcol">
+  <h3>Situated in the UK's beautiful Devon countryside</h3>
+<img title="Devon countryside" alt="Devon countryside" src="images/devon398.jpg"
+ height="229" width="398">
+</div>
+<br class="clear">
+</div><!--content section closed-->
+<!--change <div id=footer"> to <footer> and enclose text in a paragraph so that it 
+can be centred -->
+<footer><p>Footer goes here</p>
+</footer>
+</body>
+</html>

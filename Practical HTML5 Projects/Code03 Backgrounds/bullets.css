@@ -1,0 +1,10 @@
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+nav ul {width:120px; list-style:none; 
+}
+nav li {height:20px; margin-top:10px;
+	background-image:url(images/menu-bullet.gif); background-repeat:no-repeat;
+}
+nav li a { color:black; text-decoration:none; padding:0 5px 0 30px;
+}

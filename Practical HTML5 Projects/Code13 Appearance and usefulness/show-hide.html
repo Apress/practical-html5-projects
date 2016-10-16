@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>Show/hide text from learningjquery.com</title>
+<meta charset=utf-8>
+<script src="jquery.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('div.demo-show:eq(0)> div').hide();  
+$('div.demo-show:eq(0)> h3').click(function() {
+$(this).next().slideToggle('fast');
+});
+});
+</script>
+<style type="text/css">
+body { 	font-size:110%;
+}
+.demo-show { width: 400px; margin:0 auto 0 auto; text-align:left;
+}
+h1 { font-size:150%; font-weight:bold; margin:5px 0 0 0;
+}
+.demo-show h2 {  font-size:130%; margin:0; background: #bfcd93;
+border-top: 2px solid #386785; border-bottom:0; padding:5px 0 0 5px; 
+}
+.demo-show h3 {  font-size:small; margin: 0; color:blue; text-decoration:underline;
+cursor:pointer; background: #bfcd93; text-align:right; padding:0 5px 5px 0;
+}
+.demo-show div {  margin:0 0 5px 10px; padding:5px;
+}
+span.link { font-size:small; color:blue; text-decoration:underline; text-align:right;}
+#container {width:450px;
+	margin:auto; text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<h1>TODAY&#39;S NEWS</h1>
+<div class="demo-show">
+		<h2>Lamb causes trouble</h2>
+		<h3>Click here to read more or hide</h3>
+	<div>Mary had a little lamb<br />  
+		that walked into some soot<br /> 
+		And everywhere that Mary went<br />
+		His sooty foot he put
+	</div>
+ 		<h2>Weather</h2>
+ 		<h3>Click here to read more   or hide</h3>
+	<div>Red sky in the morning,<br />Shepherd&#39;s warning.<br />
+		Red sky at night,<br />The shepherd&#39;s hut is probably on fire.
+	</div>
+ 		<h2>Science and Technology</h2>
+ 		<h3>Click here to read more or hide</h3>
+	
+	<div>Scintillate, Scintillate globule ethereal
+		<br />How I contemplate your structure and material.<br />(with apologies to twinkle twinkle little star)
+	</div>
+		<h2>Thought for the day</h2>
+		<h3>Click here to read more or hide</h3>
+	<div>&quot;Give me golf clubs, fresh air and a beautiful woman partner,<br />
+	and you can keep your clubs and the fresh air.&quot;<br />
+		Jack Benny
+	</div>
+	</div>
+	</div>
+</body>
+</html>
